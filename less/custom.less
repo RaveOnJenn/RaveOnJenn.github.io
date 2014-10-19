@@ -1,0 +1,175 @@
+/*custom css file sheet*/
+body {
+  padding: 70px;
+}
+/*FOOTER*/
+footer {
+  padding: 2px 0;
+  margin: 3px 0;
+  border-top: 1px solid #ddd;
+  color: #999;
+}
+/*GLYPHICON*/
+.glyphicon {
+  color: #790000;
+}
+/*BLOCKQUOTE*/
+blockquote {
+  border: 1px solid #F26B83;
+  page-break-inside: avoid;
+}
+/*NAVBAR*/
+.navbar .nav > li > a,
+.navbar .nav > li > a:first-letter {
+  color: lightgray;
+  text-shadow: none;
+}
+/*CAROUSEL*/
+.carousel {
+  margin-top: 20px;
+}
+.bs-example {
+  margin: 20px;
+}
+.carousel-caption {
+  text-align: center;
+  color: #272626;
+}
+
+// Optional captions
+// -----------------------------
+// Hidden by default for smaller viewports
+.carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: @carousel-caption-color;
+  text-align: center;
+  text-shadow: @carousel-text-shadow;
+  & .btn {
+    text-shadow: none; // No shadow for button elements in carousel-caption
+  }
+}
+
+/*ACCORDION*/
+.active[accordion-group] .panel-heading {
+  background-color: black;
+  color: white;
+}
+.red {
+  background-color: #a09b9b;
+}
+a,
+a:hover {
+  color: #790000;
+}
+/*Btn Styling*/
+.btn-danger {
+  background-color: #790000;
+  border-color: #790000;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+  background-color: #a09b9b;
+}
+.modal-body .pull-left {
+  padding-right: 1em;
+}
+.modal-body .pull-right {
+  padding-left: 1em;
+}
+.modal-footer {
+  clear: both;
+}
+/*
+@media (min-width: 768px) {  
+	.logo {
+		text-align: left;
+	}
+	.tagline {
+		font-size: 2em;
+		text-align: right;
+		padding-top: 1.6em;
+	}
+	*/
+
+  .jumbotron {
+  padding: @jumbotron-padding;
+  margin-bottom: @jumbotron-padding;
+  color: @jumbotron-color;
+  background-color: @jumbotron-bg;
+
+  h1,
+  .h1 {
+    color: @jumbotron-heading-color;
+  }
+  p {
+    margin-bottom: (@jumbotron-padding / 2);
+    font-size: @jumbotron-font-size;
+    font-weight: 200;
+  }
+
+  .container & {
+    border-radius: @border-radius-large; // Only round corners at higher resolutions if contained in a container
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: @screen-sm-min) {
+    padding-top:    (@jumbotron-padding * 1.6);
+    padding-bottom: (@jumbotron-padding * 1.6);
+
+    .container & {
+      padding-left:  (@jumbotron-padding * 2);
+      padding-right: (@jumbotron-padding * 2);
+    }
+
+    h1,
+    .h1 {
+      font-size: (@font-size-base * 4.5);
+    }
+  }
+}
+
+// Make a button look and behave like a link
+.btn-link {
+  color: @link-color;
+  font-weight: normal;
+  cursor: pointer;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    .box-shadow(none);
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: underline;
+    background-color: transparent;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: @btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}

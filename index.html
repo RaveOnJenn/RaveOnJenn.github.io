@@ -1,7 +1,155 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Somebody's Dog</title>
+    
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link href= "css/custom.css" rel= "stylesheet">
+
+
+  </head>
+  <body>
+    <div class="container">
+
+   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-inner">
+
+
+        
+          <button type="button" class="btn btn-navbar btn-xs" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="glyphicon glyphicon-arrow-down"></span>
+          MENU
+          </button>
+          <a class="brand" href="#"></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="Django.html">Django's Story</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Search">
+              
+              <button type="submit" class="btn">Fetch!</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="bs-example hidden-xs">
+    <div id="myCarousel" class="carousel slide " data-interval="0" data-ride="carousel">
+      <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>   
+       
+        <div class="carousel-inner">
+            <div class="active item">
+                <img src="img/Django4.jpg" alt="">
+                <div class="carousel-caption">
+                  <h3>My name is Django.</h3>
+                  <p>
+                    I have had 3 different names, </p><p>one for each foster home I was in.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/Django3.jpg" alt="">
+                <div class="carousel-caption">
+                  <h3>I am a dog.</h3>
+                  <p>That means I act out my behaviors; </p> <p>I can't tell you
+                    how I feel with words.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/DjangoSM.png" alt="">
+                <div class="carousel-caption">
+                  <h3>You will never know my history.</h3>
+                  <p>You can only guess where I came from, </p><p>so you'll have to take me as I am.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+</div>
+
+   
+        
+      
+    <h1>Somebody's Dog</h1>
+    <div class="row">
+      
+
+   <article class="col-lg-offset-1 col-sm-offset-1 col-lg-8 col-sm-7 col-lg-push-3 col-sm-push-4">
+<article>
+
+        <h3><span class="glyphicon glyphicon-heart"></span> Raising a Rescue</h3>
+ 
+             <p>Although there are so many animals in shelters, raising a 'rescue' animal isn't easy. One of the New Rattitude Rat Terrier foster parents recently wrote a great article relating the truth of many pet adoption stories. Janell Brown writes; </p>
+             <blockquote>"I have this weird impossible little fantasy. It's a world where all the puppies of terrier breeds - in fact all working breeds of dogs - gave birth to hideously ugly puppies. Because then people who bought/adopted those puppies might actually think about what life with an active, intelligent dog will be like. Puppy blindness is so common and invariably the people most susceptible to it are the ones least able to actually provide what a dog needs be successful living with humans." </blockquote><p>One of the New Rattitude Rat Terrier foster parents recently wrote a great article relating the truth of many pet adoption stories. Janell Brown writes; 
+             I have this weird impossible little fantasy. It's a world where all the puppies of terrier breeds - in fact all working breeds of dogs - gave birth to hideously ugly puppies. Because then people who bought/adopted those puppies might actually think about what life with an active, intelligent dog will be like. Puppy blindness is so common and invariably the people most susceptible to it are the ones least able to actually provide what a dog needs be successful living with humans. </p>
+            </article>
+          </article>
+             
+      
+        <article class ="col-lg-3 col-sm-4 col-lg-pull-9 col-sm-pull-8">
+       <article>
+         <h3><span class="glyphicon glyphicon-heart"></span> Adopt, Don't Shop</h3>
+    
+           
+        
+            <p>This is the catch-phrase that seems to be coming into vogue where pet procurement is concerned. Gone are the days of paying high prices for specific breeds. Thanks to social media, more and more people have heard about puppy mills, where pups are kept in inhumane conditions. And on the flip side, people are also made aware of pets in need. It is not uncommon for strays, ill and elderly pets to be transported into different countries to help find 'furever homes'. Having recently experienced a 'pet rescue', we are keen to share what we have learned, given the increased attention on the subject, because as cute as they are, rescuing a pup or older dog can be a challenge.</p>
+         </article>
+       </article>
+    </div>
+
+
+
+  
+   
+    
+    <footer class="row">
+         <p><small>Copyright Jenn Ashton 2014 </small></p>
+    </footer>
+   
+    
+   
+
+
+        
+
+
+   <script src="js/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+   $(function(){
+      
+      // Stops the carousel
+      $(".pause-slide").click(function(){
+         $("#myCarousel").carousel('pause');
+      });
+
+    $('a.btn-info').tooltip()
+  </script>
+      
+      
+ 
+  </body>
 </html>

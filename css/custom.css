@@ -1,0 +1,77 @@
+/*custom css file sheet*/
+body {
+  padding: 70px;
+}
+/*FOOTER*/
+footer {
+  padding: 2px 0;
+  margin: 3px 0;
+  border-top: 1px solid #ddd;
+  color: #999;
+}
+/*GLYPHICON*/
+.glyphicon {
+  color: #790000;
+}
+/*BLOCKQUOTE*/
+blockquote {
+  border: 1px solid #F26B83;
+  page-break-inside: avoid;
+}
+/*NAVBAR*/
+.navbar .nav > li > a,
+.navbar .nav > li > a:first-letter {
+  color: lightgray;
+  text-shadow: none;
+}
+
+/*CAROUSEL*/
+.carousel {
+  margin-top: 20px;
+}
+.bs-example {
+  margin: 20px;
+}
+.carousel-caption {
+  text-align: center;
+  color: #183152;
+}
+
+
+/*ACCORDION*/
+.active[accordion-group] .panel-heading {
+  background-color: black;
+  color: white;
+}
+.red {
+  background-color: #C4D7ED;
+}
+
+a:hover {
+  color: #ABC8E2;
+}
+/*Btn Styling*/
+.btn-danger {
+  background-color: #790000;
+  border-color: #790000;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+  background-color: #25455C;
+}
+.modal-body .pull-left {
+  padding-right: 1em;
+}
+.modal-body .pull-right {
+  padding-left: 1em;
+}
+.modal-footer {
+  clear: both;
+}
+
+/*Jumbotron*/
+.jumbotron {
+  color: #183152;
+  text-decoration: underline;
+}
