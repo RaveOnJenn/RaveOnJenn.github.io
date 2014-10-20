@@ -53,95 +53,70 @@
         <h2>Test your Rat Terrier Knowledge!</h2>
 </div>
 
-<div class="wrapper">
-    <form action="/success-page" class="simple-quiz">
+
       <h3>How many Rat Terriers does it take to screw in a light bulb?</h3>
+      <ul>
+    <li><label><input type="checkbox" name="q1" id="q1-a"> One</label></li>
+    <li><label><input type="checkbox" name="q1" id="q1-b"> Two</label></li>
+    <li><label><input type="checkbox" name="q1" id="q1-c">  None, he will look at your with sad eyes until you do it.</label></li>
+    
+</ul>
+<br />
+<button id="submit">Check</button>
+<p id="win">Your answer is correct!</p>
+<p id="fail">Try again!</p>
       
-      <label>
-        <input type="radio" name="answers[1]" value="A">
-        One
-      </label>
-      
-      <label>
-        <input type="radio" name="answers[1]" value="B">
-        Two
-      </label>
- 
-      <label>
-        <input type="radio" name="answers[1]" value="C" data-correct>
-       Seven
-      </label>
       <h3>What is the best food for your Rat Terrier?</h3>
+      <ul>
+    <li><label><input type="checkbox" name="q1" id="q1-a"> Broccoli</label></li>
+    <li><label><input type="checkbox" name="q1" id="q1-b"> Caviar</label></li>
+    <li><label><input type="checkbox" name="q1" id="q1-c">  Whatever is in your hand on it's way to your mouth.</label></li>
+    
+</ul>
+<br />
+<button id="submit">Check</button>
+<p id="win">Your answer is correct!</p>
+<p id="fail">Try again!</p>
       
-      <label>
-        <input type="radio" name="answers[1]" value="A">
-        Broccoli
-      </label>
-      
-      <label>
-        <input type="radio" name="answers[1]" value="B">
-        Caviar
-      </label>
- 
-      <label>
-        <input type="radio" name="answers[1]" value="C" data-correct>
-       Whatever is in your hand on it's way to your mouth.
-      </label>
 
       <h3>What is a Rat Terrier's favourite outfit?</h3>
+      <ul>
+    <li><label><input type="checkbox" name="q1" id="q1-a"> Sweats</label></li>
+    <li><label><input type="checkbox" name="q1" id="q1-b"> Bikini</label></li>
+    <li><label><input type="checkbox" name="q1" id="q1-c">  Anything by Stella McCartney.</label></li>
+    
+</ul>
+<br />
+<button id="submit">Check</button>
+<p id="win">Your answer is correct!</p>
+<p id="fail">Try again!</p>
       
-      <label>
-        <input type="radio" name="answers[1]" value="A">
-        Sweats
-      </label>
-      
-      <label>
-        <input type="radio" name="answers[1]" value="B">
-        Bikini
-      </label>
- 
-      <label>
-        <input type="radio" name="answers[1]" value="C" data-correct>
-       Anything by Stella McCartney.
-      </label>
 
 
       <h3>Why does California have such a large Rat Terrier population?</h3>
-      
-      <label>
-        <input type="radio" name="answers[1]" value="A">
-        So many rats!
-      </label>
-      
-      <label>
-        <input type="radio" name="answers[1]" value="B">
-        Affordable housing.
-      </label>
- 
-      <label>
-        <input type="radio" name="answers[1]" value="C" data-correct>
-       The waves man!
-      </label>
- 
+          <ul>
+    <li><label><input type="checkbox" name="q1" id="q1-a"> Too many rats!</label></li>
+    <li><label><input type="checkbox" name="q1" id="q1-b"> Affordable housing.</label></li>
+    <li><label><input type="checkbox" name="q1" id="q1-c"> The waves man!</label></li>
+    
+</ul>
+<br />
+<button id="submit">Check</button>
+<p id="win">Your answer is correct!</p>
+<p id="fail">Try again!</p>
 
-      <h3>Where is the best place for your Rat Terrier to sleep?</h3>
+<h3>Where is the best place for your Rat Terrier to sleep?</h3>
+        <ul>
+    <li><label><input type="checkbox" name="q1" id="q1-a"> Outside in a dog house.</label></li>
+    <li><label><input type="checkbox" name="q1" id="q1-b"> In a bed by the fire.</label></li>
+    <li><label><input type="checkbox" name="q1" id="q1-c"> Sharing a pillow with your husband.</label></li>
+    
+</ul>
+<br />
+<button id="submit">Check</button>
+<p id="win">Your answer is correct!</p>
+<p id="fail">Try again!</p>
       
-      <label>
-        <input type="radio" name="answers[2]" value="A">
-        Outside in a dog house.
-      </label>
-      
-      <label>
-        <input type="radio" name="answers[2]" value="B" data-correct>
-        In a bed by the fire.
-      </label>
- 
-      <label>
-        <input type="radio" name="answers[2]" value="C">
-        Sharing a pillow with your husband.
-      </label>
- 
-      <input type="submit" >
     </form>
     </div>
 
@@ -172,25 +147,20 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
  
-    <script src="jquery.js" type="text/javascript"></script>
-    <script src="jquery.simpleQuiz.js" type="text/javascript"></script>
- 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.simple-quiz').simpleQuiz();
-      });
-//testing to line 200
+   $(function() {
+    var rules = ['q1-a,q1-b,q1-c']
+    $('#submit').click(function() {
+        $('#win,#fail').hide();
+        if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win").show();
+         }
+         else
+        {   
+            $("#fail").show();
+        }
+    });
+});
 
-      <script>
-  
-    $('footer').slideUp(2000).slideDown(1000);
-    $('submit').css({
-      border: "1px solid red",
-      fontSize: "24px"
-    }); 
-
-  $('img').fadeTo(2000, 0.5);
-</script>
 
 
 

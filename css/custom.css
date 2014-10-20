@@ -76,8 +76,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/*submit button*/
-.submit {
-  float: left;
-  margin-left: 20px;
+#win,#fail
+{
+    display:none;
 }
