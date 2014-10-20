@@ -63,7 +63,7 @@
 </ul>
 <br />
 <button id="submit">Check</button>
-<p id="win">Your answer is correct!</p>
+<p id="win"><span class="glyphicon glyphicon-heart"></span>Your answer is correct!</p>
 <p id="fail">Try again!</p>
       
       <h3>What is the best food for your Rat Terrier?</h3>
@@ -75,7 +75,7 @@
 </ul>
 <br />
 <button id="submit">Check</button>
-<p id="win">Your answer is correct!</p>
+<p id="win"><span class="glyphicon glyphicon-heart"></span>Your answer is correct!</p>
 <p id="fail">Try again!</p>
       
 
@@ -88,7 +88,7 @@
 </ul>
 <br />
 <button id="submit">Check</button>
-<p id="win">Your answer is correct!</p>
+<p id="win"><span class="glyphicon glyphicon-heart"></span>Your answer is correct!</p>
 <p id="fail">Try again!</p>
       
 
@@ -102,7 +102,7 @@
 </ul>
 <br />
 <button id="submit">Check</button>
-<p id="win">Your answer is correct!</p>
+<p id="win"><span class="glyphicon glyphicon-heart"></span>Your answer is correct!</p>
 <p id="fail">Try again!</p>
 
 <h3>Where is the best place for your Rat Terrier to sleep?</h3>
@@ -114,7 +114,7 @@
 </ul>
 <br />
 <button id="submit">Check</button>
-<p id="win">Your answer is correct!</p>
+<p id="win"><span class="glyphicon glyphicon-heart"></span>Your answer is correct!</p>
 <p id="fail">Try again!</p>
       
     </form>
@@ -151,8 +151,8 @@
     var rules = ['q1-c,q2-c,q3-c,q4-c,q5-c']
     $('#submit').click(function() {
         $('#win,#fail').hide();
-        if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
-            $("#win").show(<span class="glyphicon glyphicon-heart"></span>);
+        if( $('input[name=q1, name =q2, name=q3, name=q4,name=q5]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win").show();
          }
          else
         {   
