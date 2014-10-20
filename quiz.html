@@ -58,7 +58,7 @@
       <ul>
     <li><label><input type="checkbox" name="q1" id="q1-a"> One</label></li>
     <li><label><input type="checkbox" name="q1" id="q1-b"> Two</label></li>
-    <li><label><input type="checkbox" name="q1" id="q1-c">  None, he will look at your with sad eyes until you do it.</label></li>
+    <li><label><input type="checkbox" name="q1" id="q1-c">  None, he will look at you with sad eyes until you do it.</label></li>
     
 </ul>
 <br />
@@ -70,7 +70,7 @@
       <ul>
     <li><label><input type="checkbox" name="q2" id="q2-a"> Broccoli</label></li>
     <li><label><input type="checkbox" name="q2" id="q2-b"> Caviar</label></li>
-    <li><label><input type="checkbox" name="q2" id="q2-c">  Whatever is in your hand on it's way to your mouth.</label></li>
+    <li><label><input type="checkbox" name="q2" id="q2-c">  Whatever is in your hand, on it's way to your mouth.</label></li>
     
 </ul>
 <br />
@@ -151,7 +151,7 @@
     var rules = ['q1-c']
     $('#submit').click(function() {
         $('#win,#fail').hide();
-        if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+        if( $('input[name=q1,q2]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
             $("#win").show();
          }
          else
