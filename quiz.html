@@ -68,9 +68,9 @@
       
       <h3>What is the best food for your Rat Terrier?</h3>
       <ul>
-    <li><label><input type="checkbox" name="q1" id="q1-a"> Broccoli</label></li>
-    <li><label><input type="checkbox" name="q1" id="q1-b"> Caviar</label></li>
-    <li><label><input type="checkbox" name="q1" id="q1-c">  Whatever is in your hand on it's way to your mouth.</label></li>
+    <li><label><input type="checkbox" name="q2" id="q2-a"> Broccoli</label></li>
+    <li><label><input type="checkbox" name="q2" id="q2-b"> Caviar</label></li>
+    <li><label><input type="checkbox" name="q2" id="q2-c">  Whatever is in your hand on it's way to your mouth.</label></li>
     
 </ul>
 <br />
@@ -81,9 +81,9 @@
 
       <h3>What is a Rat Terrier's favourite outfit?</h3>
       <ul>
-    <li><label><input type="checkbox" name="q1" id="q1-a"> Sweats</label></li>
-    <li><label><input type="checkbox" name="q1" id="q1-b"> Bikini</label></li>
-    <li><label><input type="checkbox" name="q1" id="q1-c">  Anything by Stella McCartney.</label></li>
+    <li><label><input type="checkbox" name="q3" id="q3-a"> Sweats</label></li>
+    <li><label><input type="checkbox" name="q3" id="q3-b"> Bikini</label></li>
+    <li><label><input type="checkbox" name="q3" id="q3-c">  Anything by Stella McCartney.</label></li>
     
 </ul>
 <br />
@@ -95,9 +95,9 @@
 
       <h3>Why does California have such a large Rat Terrier population?</h3>
           <ul>
-    <li><label><input type="checkbox" name="q1" id="q1-a"> Too many rats!</label></li>
-    <li><label><input type="checkbox" name="q1" id="q1-b"> Affordable housing.</label></li>
-    <li><label><input type="checkbox" name="q1" id="q1-c"> The waves man!</label></li>
+    <li><label><input type="checkbox" name="q4" id="q4-a"> Too many rats!</label></li>
+    <li><label><input type="checkbox" name="q4" id="q4-b"> Affordable housing.</label></li>
+    <li><label><input type="checkbox" name="q4" id="q4-c"> The waves man!</label></li>
     
 </ul>
 <br />
@@ -107,9 +107,9 @@
 
 <h3>Where is the best place for your Rat Terrier to sleep?</h3>
         <ul>
-    <li><label><input type="checkbox" name="q1" id="q1-a"> Outside in a dog house.</label></li>
-    <li><label><input type="checkbox" name="q1" id="q1-b"> In a bed by the fire.</label></li>
-    <li><label><input type="checkbox" name="q1" id="q1-c"> Sharing a pillow with your husband.</label></li>
+    <li><label><input type="checkbox" name="q5" id="q5-a"> Outside in a dog house.</label></li>
+    <li><label><input type="checkbox" name="q5" id="q5-b"> In a bed by the fire.</label></li>
+    <li><label><input type="checkbox" name="q5" id="q5-c"> Sharing a pillow with your husband.</label></li>
     
 </ul>
 <br />
@@ -148,11 +148,11 @@
     <script>
  
    $(function() {
-    var rules = ['q1-c']
+    var rules = ['q1-c,q2-c,q3-c,q4-c,q5-c']
     $('#submit').click(function() {
         $('#win,#fail').hide();
         if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
-            $("#win").show();
+            $("#win").show(<span class="glyphicon glyphicon-heart"></span>);
          }
          else
         {   
