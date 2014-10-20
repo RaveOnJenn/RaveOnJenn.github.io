@@ -75,3 +75,9 @@ a:hover {
   color: #183152;
   text-decoration: underline;
 }
+
+/*submit button*/
+.submit {
+  float: left;
+  margin-left: 20px;
+}
