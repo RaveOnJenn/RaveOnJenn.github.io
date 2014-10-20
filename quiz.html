@@ -114,7 +114,7 @@
 </ul>
 <br />
 <button id="submit">Check</button>
-<p id="win"><span class="glyphicon glyphicon-heart"></span>Your answer is correct!</p>
+<p id="win">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
 <p id="fail">Try again!</p>
       
     </form>
@@ -148,10 +148,10 @@
     <script>
  
    $(function() {
-    var rules = ['q1-c,q2-c,q3-c,q4-c,q5-c']
+    var rules = ['q1-c']
     $('#submit').click(function() {
         $('#win,#fail').hide();
-        if( $('input[name=q1, name =q2, name=q3, name=q4,name=q5]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+        if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
             $("#win").show();
          }
          else
@@ -160,6 +160,54 @@
         }
     });
 });
+$(function() {
+    var rules = ['q2-c']
+    $('#submit').click(function() {
+        $('#win,#fail').hide();
+        if( $('input[name=q2]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win").show();
+         }
+         else
+        {   
+            $("#fail").show();
+        }
+    });
+});$(function() {
+    var rules = ['q3-c']
+    $('#submit').click(function() {
+        $('#win,#fail').hide();
+        if( $('input[name=q3]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win").show();
+         }
+         else
+        {   
+            $("#fail").show();
+        }
+    });
+});$(function() {
+    var rules = ['q4-c']
+    $('#submit').click(function() {
+        $('#win,#fail').hide();
+        if( $('input[name=q4]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win").show();
+         }
+         else
+        {   
+            $("#fail").show();
+        }
+    });
+});$(function() {
+    var rules = ['q5-c']
+    $('#submit').click(function() {
+        $('#win,#fail').hide();
+        if( $('input[name=q5]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win").show();
+         }
+         else
+        {   
+            $("#fail").show();
+        }
+    });
 
 
 
