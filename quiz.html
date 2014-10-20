@@ -148,12 +148,44 @@
     <script>
  
    $(function() {
-    var rules = ['q1-c']
+    var rules = ['q1-c','q2-c','q3-c','q4-c','q5-c']
    
 
     $('#submit').click(function() {
         $('#win,#fail').hide();
         if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win").show();
+         }
+         else
+        {   
+            $("#fail").show();
+        }
+        });
+    if( $('input[name=q2]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win").show();
+         }
+         else
+        {   
+            $("#fail").show();
+        }
+        });
+   if( $('input[name=q3]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win").show();
+         }
+         else
+        {   
+            $("#fail").show();
+        }
+        });
+ if( $('input[name=q4]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win").show();
+         }
+         else
+        {   
+            $("#fail").show();
+        }
+        });
+ if( $('input[name=q5]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
             $("#win").show();
          }
          else
