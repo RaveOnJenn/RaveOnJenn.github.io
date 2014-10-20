@@ -63,8 +63,8 @@
 </ul>
 <br />
 <button id="submit">Check</button>
-<p id="win"><span class="glyphicon glyphicon-heart"></span>Your answer is correct!</p>
-<p id="fail">Try again!</p>
+<p id="win"></span>Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail">Try again!</p><span class="glyphicon glyphicon-thumbs-down"></span>
       
       <h3>What is the best food for your Rat Terrier?</h3>
       <ul>
@@ -75,8 +75,8 @@
 </ul>
 <br />
 <button id="submit">Check</button>
-<p id="win"><span class="glyphicon glyphicon-heart"></span>Your answer is correct!</p>
-<p id="fail">Try again!</p>
+<p id="win"></span>Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail">Try again!</p><span class="glyphicon glyphicon-thumbs-down"></span>
       
 
       <h3>What is a Rat Terrier's favourite outfit?</h3>
@@ -88,8 +88,8 @@
 </ul>
 <br />
 <button id="submit">Check</button>
-<p id="win"><span class="glyphicon glyphicon-heart"></span>Your answer is correct!</p>
-<p id="fail">Try again!</p>
+<p id="win"></span>Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail">Try again!</p><span class="glyphicon glyphicon-thumbs-down"></span>
       
 
 
@@ -102,8 +102,8 @@
 </ul>
 <br />
 <button id="submit">Check</button>
-<p id="win"><span class="glyphicon glyphicon-heart"></span>Your answer is correct!</p>
-<p id="fail">Try again!</p>
+<p id="win">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail">Try again!</p><span class="glyphicon glyphicon-thumbs-down"></span>
 
 <h3>Where is the best place for your Rat Terrier to sleep?</h3>
         <ul>
@@ -115,7 +115,7 @@
 <br />
 <button id="submit">Check</button>
 <p id="win">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail">Try again!</p>
+<p id="fail">Try again!</p><span class="glyphicon glyphicon-thumbs-down"></span>
       
     </form>
     </div>
@@ -148,10 +148,10 @@
     <script>
  
    $(function() {
-    var rules = ['q1-c']
+    var rules = ['q1,q2,q3,q4,q5-c']
     $('#submit').click(function() {
         $('#win,#fail').hide();
-        if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+        if( $('input[name=q1,q2,q3,q4,q5]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
             $("#win").show();
          }
          else
