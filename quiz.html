@@ -148,7 +148,12 @@
     <script>
  
    $(function() {
-    var rules = "q1=c"
+    var rules = ['q1-c']
+    var rules = ['q2-c']
+    var rules = ['q3-c']
+    var rules = ['q4-c']
+    var rules = ['q5-c']
+
     $('#submit').click(function() {
         $('#win,#fail').hide();
         if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
