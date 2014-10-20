@@ -147,23 +147,22 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
  
-   $(function() {
-    var rules = ['q1-c']
-   
-
+  $(function() {
+    var rules = ['q1-a']
     $('#submit').click(function() {
         $('#win,#fail').hide();
-        if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] )
-         {
+        if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
             $("#win").show();
          }
          else
         {   
             $("#fail").show();
         }
-        });
-
+    });
 });
+
+
+
 
 
 
