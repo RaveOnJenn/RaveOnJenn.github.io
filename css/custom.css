@@ -73,7 +73,7 @@ a:hover {
 /*Jumbotron*/
 .jumbotron {
   color: #183152;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #win,#fail
