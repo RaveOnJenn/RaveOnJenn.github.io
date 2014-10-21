@@ -81,6 +81,11 @@ a:hover {
     display:none;
 }
 
+#quiz
+{
+
+  outline-color: danger
+}
 /*smart dog*/
 
 
