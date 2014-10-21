@@ -160,14 +160,20 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
  
+$function(){
 
+ var rules = ['q1-a']
+ 
 $('checkbox[q1-a]').hide();
+
 if('input["#quiz"]checked'){
             $("checkbox").show()};
 
 $( "#quiz").click(function() {
   $( "ul" ).toggle( "slow" );
 });
+}
+
 
   $(function() {
     var rules = ['q1-c']
