@@ -161,14 +161,14 @@
     <script>
  
 
-$("checkbox").hide();
-if('input[#quiz]checked'){
+$('checkbox[q1-a]').hide();
+if('input["#quiz"]checked'){
             $("checkbox").show()};
 
 $( "#quiz").click(function() {
   $( "ul" ).toggle( "slow" );
 });
- 
+
   $(function() {
     var rules = ['q1-c']
     $('#submit').click(function() {
