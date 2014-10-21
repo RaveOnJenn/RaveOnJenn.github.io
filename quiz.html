@@ -169,7 +169,9 @@
          }
          else
         {   
-            $("#fail").show();
+            $("#fail").show().css({
+        color: "red"
+      });
         }
     });
 });
@@ -201,7 +203,7 @@ $('ul').hide();
 $( "#quiz").click(function() {
 
   $( "ul" ).toggle( "slow" );
-  $("#quiz").css("background", "red");
+
   
 });
 
