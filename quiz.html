@@ -101,7 +101,7 @@
           <ul>
     <li><label><input type="checkbox" name="q4" id="q4-a"> Too many rats!</label></li>
     <li><label><input type="checkbox" name="q4" id="q4-b"> Affordable housing.</label></li>
-    <li><label><input type="checkbox" name="q4" id="q4-c"> The waves man!</label></li>
+    <li><label><input type="checkbox" name="q4" id="q4-c"> The waves dude!</label></li>
     
 </ul>
 <br />
@@ -192,6 +192,9 @@ $(document).ready(function(){
   }); //end ready
 
 
+$("checkbox").hide();
+if('input[quiz]checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("checkbox").show();
 
 $( "#quiz").click(function() {
   $( "ul" ).toggle( "slow" );
