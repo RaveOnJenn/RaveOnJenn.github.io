@@ -193,8 +193,8 @@ $(document).ready(function(){
 
 
 $("checkbox").hide();
-if('input[quiz]checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
-            $("checkbox").show();
+if('input[#quiz]checked'){
+            $("checkbox").show()};
 
 $( "#quiz").click(function() {
   $( "ul" ).toggle( "slow" );
