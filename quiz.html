@@ -160,12 +160,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
  
-
-
-$( "#quiz").click(function() {
-  $( "ul" ).toggle( "slow" );
-});
-
   $(function() {
     var rules = ['q1-c']
     $('#submit').click(function() {
@@ -198,7 +192,13 @@ $(document).ready(function(){
   }); //end ready
 
 
-
+$("checkbox").hide();{
+if('input[#quiz]checked'){
+            $("checkbox").show()};
+}
+$( "#quiz").click(function() {
+  $( "ul" ).toggle( "slow" );
+});
 
 
 
