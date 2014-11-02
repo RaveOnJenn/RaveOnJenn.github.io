@@ -59,9 +59,11 @@
 <div class="row">
             <div class="col-sm-12 form-group">
           <fieldset>
-<button id="quiz">Click for Quiz!</button>
+
 
 <legend class="control-label">Quiz</legend>
+
+<button id="quiz">Click for Quiz!</button>
 <div class ='radio'>
       <h3>How many Rat Terriers does it take to screw in a light bulb?</h3>
       <ul>
@@ -211,7 +213,7 @@
 $(document).ready(function(){
     console.log("Document loaded!");
 
-$("control-label").hide();
+$("#quiz").hide();
 
     
 
@@ -233,7 +235,7 @@ $("control-label").hide();
 
 $( "#quiz").click(function() {
 
-  $( "control-label" ).toggle( "slow" );
+  $( "#quiz" ).toggle( "slow" );
 
 
   
