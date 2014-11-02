@@ -61,7 +61,7 @@
           <fieldset>
 <button id="quiz">Click for Quiz!</button>
 
-<legend class="control-label"></legend>
+<legend class="control-label">Quiz</legend>
 <div class ='radio'>
       <h3>How many Rat Terriers does it take to screw in a light bulb?</h3>
       <ul>
@@ -211,7 +211,7 @@
 $(document).ready(function(){
     console.log("Document loaded!");
 
-$(ul class = "radio").hide();
+$("control-label").hide();
 
     
 
@@ -233,7 +233,7 @@ $(ul class = "radio").hide();
 
 $( "#quiz").click(function() {
 
-  $( ul class = "radio" ).toggle( "slow" );
+  $( "control-label" ).toggle( "slow" );
 
 
   
