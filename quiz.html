@@ -55,16 +55,16 @@
       
         <h2>Test your Rat Terrier Knowledge!</h2>
 </div>
-
+<button id="quiz">Click for Quiz!</button>
 <div class="row">
             <div class="col-sm-12 form-group">
 
-         
+          <fieldset>
 
 
 
 
-<button id="quiz">Click for Quiz!</button>
+
 <div class ='radio'>
       <h3>How many Rat Terriers does it take to screw in a light bulb?</h3>
       <ul>
@@ -140,7 +140,7 @@
 <p id="fail">Try again!</p>
       </div
 
-    
+    </fieldset>
   </div>
 </div>
 </div>
@@ -214,7 +214,7 @@
 $(document).ready(function(){
     console.log("Document loaded!");
 
-$("ul").hide();
+$("fieldset").hide();
 
     
 
@@ -236,7 +236,7 @@ $("ul").hide();
 
 $( "#quiz").click(function() {
 
-  $( "ul" ).toggle( "slow" );
+  $( "fieldset" ).toggle( "slow" );
 
 
   
