@@ -19,4 +19,12 @@ $(document).ready(function(){
 				$('.search-group .help-block').text('There are no other choices.');
 			}
 });
+
+
+	$('button').click(function(submit){
+		
+			$('#myModal').modal();
+			submit.preventDefault();
+		}
+	}); //end click
 	}); 
