@@ -1,12 +1,12 @@
 $(document).ready(function(){
 	$('#searchengine').change(function(){
-		if ($('#searchengine').val() == "Big Rat Terriers") {
+		if ($('#searchengine').val() == 'Big Rat Terrier') {
 				$('.search-group .help-block').text('Bigger is better!');
-			} else if ($('#searchengine').val() == "Any Rescue!") 
+			} else if ($('#searchengine').val() == 'Medium Rat Terrier') 
 			{
-				$('.search-group .help-block').text('Hurray you have a good heart!');
+				$('.search-group .help-block').text('Ah just right!');
 			
-			} else if ($('#searchengine').val() == "Small Rat Terriers") 
+			} else if ($('#searchengine').val() == 'Small Rat Terrier') 
 			{
 				$('.search-group .help-block').text('Small is still a handful!');
 			} else {
