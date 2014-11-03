@@ -21,10 +21,5 @@ $(document).ready(function(){
 });
 
 
-	$('button').click(function(submit){
-		
-			$('#myModal').modal();
-			submit.preventDefault();
-		}
-	}); //end click
+	
 	}); 
