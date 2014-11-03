@@ -60,7 +60,7 @@
 
 
 
-<button id="quiz" button class= "btn btn-danger btn-lg">Quiz me!</button>
+<button id="quiz" button class= "btn btn-danger btn-lg">Click here for Quiz!</button>
 <div class='container'>
 <div class="row">
             <div class="col-sm-12  form-group">
@@ -149,6 +149,34 @@
 </div>
 </div>
    
+
+<button id="join" button class= "btn btn-danger btn-lg">Join the Rat Pack here!</button>
+<div class='container'>
+<div class="row">
+
+          <div class="col-sm-6 form-group name-group">
+            <fieldset>
+              <label for="name" class="control-label">Your name: <span class="glyphicon glyphicon-star"></span></label>
+              <input type="text" id="name" class="form-control">
+              <span class="help-block"></span>
+          </div>
+          <div class="col-sm-6 form-group">
+               <label for="email" class="control-label">Your email:</label>
+               <input type="text" id="email" class="form-control">
+          </div>
+        </fieldset>
+        </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
 <aside class="col-lg-offset-1 col-sm-offset-1 col-lg-8 col-sm-7 col-lg-push-3 col-sm-push-4 hidden-xs">
 
       
@@ -243,7 +271,24 @@
          <p><small>Copyright Jenn Ashton 2014 </small></p>
     </footer>
    
-
+<!-- modal window -->
+    
+<div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Thank you!</h4>
+      </div>
+      <div class="modal-body">
+        <p>Thanks for submitting the form! You will hear back from us shortly.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
     
  
  
@@ -301,7 +346,13 @@ $( "#quiz").click(function() {
   
 });
 
+$( "#join").click(function() {
 
+  $( "fieldset" ).toggle( "slow" );
+
+
+  
+});
 
 
     
