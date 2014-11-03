@@ -14,5 +14,9 @@ $(document).ready(function(){
 			{
 				$('.search-group .help-block').text('Small is still a handful!');
 			} 
+			else
+			{
+				$('.search-group .help-block').text('True, there are no other choices.');
+			}
 });
 	}); 
