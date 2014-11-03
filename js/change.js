@@ -5,12 +5,12 @@ $(document).ready(function(){
 			} else if ($('#searchengine').val() == "Any Rescue!") 
 			{
 				$('.search-group .help-block').text('Hurray you have a good heart!');
-			else if ($('#searchengine').val() == "Medium Rat Terriers") 
-			{
-				$('.search-group .help-block').text('Medium is just right for us!');
+			
 			} else if ($('#searchengine').val() == "Small Rat Terriers") 
 			{
 				$('.search-group .help-block').text('Small is still a handful!');
-			} 
+			} else {
+				$('.search-group .help-block').text('Is there anything else?');
+			}
 
 	}); 
