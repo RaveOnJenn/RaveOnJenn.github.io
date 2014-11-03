@@ -90,9 +90,9 @@
     
 </ul>
 <br />
-<button id="submit">Check</button>
-<p id="win"></span>Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail">Try again!</p>
+<button id="submit2">Check</button>
+<p id="win2"></span>Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail2">Try again!</p>
 </div>
 
       
@@ -174,7 +174,19 @@
 </div>
   </div>
 </div>
-
+<div class="row">
+            <div class="col-lg-12 form-group search-group">
+          <label for="searchengine" class="control-label"></label>
+          <select id="searchengine" class="form-control">
+            <option checked>Please select your favourite breed of dog:</option>
+            <option value="Big Rat Terrier">Big Rat Terrier</option>
+            <option value="Medium Rat Terrier">Medium Rat Terrier</option>
+            <option value="Small Rat Terrier">Small Rat Terrier</option>  
+           <option value="Other?">Other?</option> 
+          </select>
+          <span class="help-block"></span>
+            </div>
+         </div>
 
   <aside class="col-lg-offset-1 col-sm-offset-1 col-lg-8 col-sm-7 col-lg-push-3 col-sm-push-4 hidden-xs">
 
@@ -203,19 +215,7 @@
   </div>
 </aside>
   
-  <div class="row">
-            <div class="col-lg-12 form-group search-group">
-          <label for="searchengine" class="control-label"></label>
-          <select id="searchengine" class="form-control">
-            <option checked>Please select your favourite breed of dog:</option>
-            <option value="Big Rat Terrier">Big Rat Terrier</option>
-            <option value="Medium Rat Terrier">Medium Rat Terrier</option>
-            <option value="Small Rat Terrier">Small Rat Terrier</option>  
-           <option value="Other?">Other?</option> 
-          </select>
-          <span class="help-block"></span>
-            </div>
-         </div>
+  
 <figure>
         <img alt="smart dog" src="img/smartDjango.png">
 
@@ -253,15 +253,15 @@
     <script>
  
   $(function() {
-    var rules = ['q1-c']
-    $('#submit').click(function() {
-        $('#win,#fail').hide();
-        if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
-            $("#win").show();
+    var rules = ['q2-c']
+    $('#submit2').click(function() {
+        $('#win2,#fail2').hide();
+        if( $('input[name=q2]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win2").show();
          }
          else
         {   
-            $("#fail").show();
+            $("#fail2").show();
         }
     });
 });
