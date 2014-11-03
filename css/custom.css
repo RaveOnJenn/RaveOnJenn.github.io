@@ -193,6 +193,6 @@ figcaption a:hover {
   background: #fff;
 }
 
-
-
+/*center quiz*/
+.im-centered { margin: auto; max-width: 300px;}
 
