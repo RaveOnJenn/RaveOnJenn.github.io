@@ -16,7 +16,7 @@ $(document).ready(function(){
 			} 
 			else
 			{
-				$('.search-group .help-block').text('True, there are no other choices.');
+				$('.search-group .help-block').text('There are no other choices.');
 			}
 });
 	}); 
