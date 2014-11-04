@@ -385,11 +385,12 @@ $( "#quiz").click(function() {
 });
 
 $("#doggie").hover(function(){
-fadeOut(2000);
+
+    $(this).find("img").fadeOut(2000);
 
 }, function() {
 
-   .fadeIn(3000);
+    $(this).find("img").fadeIn(3000);
 
 });
 
