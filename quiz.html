@@ -168,7 +168,13 @@
                <div class="row">
             <div class="col-sm-10 form-group">
           <label for="comments" class="control-label">Questions? Drop us a line!</label><span class="glyphicon glyphicon-heart"></span>
-          <textarea id="comments" class="form-control"></textarea>
+
+          
+
+          <textarea name="comments" class="form-control" 
+                rows="10" data-toggle="tooltip" title="Django says: Please write and say hi!" data-placement="bottom">
+              </textarea>
+
             </div>
          </div>
         <button name="submit" type="submit" class="btn btn-danger btn-lg">Submit</button>
@@ -194,7 +200,7 @@
   
 
 <img src="img/selfie.png" alt="" class="img-thumbnail pull-left hidden-xs">
-<legend class="control-label">Scratch here!<span class="glyphicon glyphicon-circle-arrow-up"></span></legend>
+<legend class="control-label">Scratch <span class="glyphicon glyphicon-circle-arrow-up"></span>here!</legend>
   
 
 
