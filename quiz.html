@@ -197,9 +197,11 @@
 
 
 
-  
+  <div id="doggie">
+    <img src="http://cdn.css-tricks.com/images/selfie.png" alt="doggie" />
+</div>
 
-<img src="img/selfie.png" alt="" class="img-thumbnail pull-left hidden-xs">
+
 <legend class="control-label">Scratch <span class="glyphicon glyphicon-circle-arrow-up"></span> here!</legend>
   
 
@@ -381,7 +383,15 @@ $( "#quiz").click(function() {
   
 });
 
+$("#doggie").hover(function(){
 
+    $(this).find("img").fadeOut();
+
+}, function() {
+
+    $(this).find("img").fadeIn();
+
+});
 
 
     
