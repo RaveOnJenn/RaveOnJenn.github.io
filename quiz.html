@@ -199,7 +199,8 @@
   
     
 <img src="img/selfie.png" alt="" class="img-thumbnail pull-left hidden-xs">
-<h3>Are you having fun yet?</h3>
+<legend class="control-label">Are you having fun yet? </legend>
+  
 
 
 
@@ -374,79 +375,8 @@
     <script src="js/change.js"></script>
     <script>
  
-  $(function() {
-    var rules = ['q1-c']
-    $('#submit').click(function() {
-        $('#win,#fail').hide();
-        if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
-            $("#win").show();
-         }
-         else
-        {   
-            $("#fail").show();
-        }
-        
-    });
-});
-
- 
-
-
-   
-
-
-$(document).ready(function(){
-    console.log("Document loaded!");
-
-$("fieldset").hide();
-
-    
-
-    $('.jumbotron').fadeOut(2000).fadeIn(400).css({
-        color: "red"
-
-      });
-   
-
-   
-   $('footer').fadeOut(2000).fadeIn(3000).css({
-        fontSize: "3px",
-        
-        color: "red"
-      });
-    
-
-//add reset to quiz when it closes//
-
-$( "#quiz").click(function() {
-
-  $( "fieldset" ).toggle( "slow" );
-
-
   
-});
-
-$(document).ready(function () {
-
-    (function ($) {
-
-        $('#filter').keyup(function () {
-
-            var rex = new RegExp($(this).val(), 'i');
-            $('.searchable tr').hide();
-            $('.searchable tr').filter(function () {
-                return rex.test($(this).text());
-            }).show();
-
-        })
-
-    }(jQuery));
-
-});
-
-
     
-  }); //end ready
 
 
 
