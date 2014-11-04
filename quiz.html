@@ -356,7 +356,19 @@
         }
     });
 });
-     
+     $(function() {
+    var rules = ['q3-c']
+    $('#submit3').click(function() {
+        $('#win3,#fail3').hide();
+        if( $('input[name=q3]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win3").show();
+         }
+         else
+        {   
+            $("#fail3").show();
+        }
+    });
+}); 
 $(document).ready(function(){
     console.log("Document loaded!");
 
