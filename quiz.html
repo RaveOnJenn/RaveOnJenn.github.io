@@ -199,7 +199,9 @@
   
     
 <img src="img/selfie.png" alt="" class="img-thumbnail pull-left hidden-xs">
-<legend class="control-label">Scratch <span class="glyphicon glyphicon-circle-arrow-up"></span> here!</legend>
+<button id="opener">Please scratch!</button>
+<div id="dialog" title="Dialog Title">Thank you SO much!</div>
+
   
 
 
@@ -380,7 +382,10 @@ $( "#quiz").click(function() {
   
 });
 
-
+$( "#dialog" ).dialog({ autoOpen: false });
+$( "#opener" ).click(function() {
+  $( "#dialog" ).dialog( "open" );
+});
 
 
     
