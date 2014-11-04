@@ -196,9 +196,10 @@
 </div>
 
 <div class="container">
+  <div id="doggie">
 <img src="img/webtest.png" alt="img" />
 
-  <div id="doggie">
+  
     <img src="img/selfie.png" alt="doggie" />
 </div>
 </div>
@@ -388,11 +389,11 @@ $( "#quiz").click(function() {
 
 $("#doggie").hover(function(){
 
-    $(this).find("img").fadeOut();
+    $(this).find("img").fadeOut(2000);
 
 }, function() {
 
-    $(this).find("img").fadeIn();
+    $(this).find("img").fadeIn(3000);
 
 });
 
