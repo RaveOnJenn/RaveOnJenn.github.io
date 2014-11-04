@@ -199,9 +199,7 @@
   
     
 <img src="img/selfie.png" alt="" class="img-thumbnail pull-left hidden-xs">
-<button id="opener">Please scratch!</button>
-<div id="dialog" title="Dialog Title">Thank you SO much!</div>
-
+<legend class="control-label">Scratch <span class="glyphicon glyphicon-circle-arrow-up"></span> here!</legend>
   
 
 
@@ -328,10 +326,6 @@
 <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/change.js"></script>
-
-     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script>
  
   $(function() {
@@ -386,10 +380,7 @@ $( "#quiz").click(function() {
   
 });
 
-$( "#dialog" ).dialog({ autoOpen: false });
-$( "#opener" ).click(function() {
-  $( "#dialog" ).dialog( "open" );
-});
+
 
 
     
