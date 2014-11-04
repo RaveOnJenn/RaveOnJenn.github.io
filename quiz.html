@@ -199,7 +199,7 @@
   
     
 <img src="img/selfie.png" alt="" class="img-thumbnail pull-left hidden-xs">
-<legend class="control-label">Scratch <span class="glyphicon glyphicon-circle-arrow-up"></span> here!</legend>
+<legend class="control-label">Isn't this fun!? </legend>
   
 
 
@@ -287,8 +287,47 @@
         </figcaption>
     </figure>
 
+<h2>What type of dog is best for you?</h2>
+<div class="input-group"> <span class="input-group-addon">Filter</span>
 
-
+    <input id="filter" type="text" class="form-control" placeholder="Type here...">
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Dog Breed</th>
+            <th>Size</th>
+            <th>Intelligence/Personality</th>
+            <th>Function</th>
+        </tr>
+    </thead>
+    <tbody class="searchable">
+        <tr>
+            <td>Parson Terrier</td>
+            <td>Medium</td>
+            <td>Smart</td>
+            <td>Sport</td>
+        </tr>
+        <tr>
+            <td>Welsh Terrier</td>
+            <td>Medium</td>
+            <td>Smart</td>
+            <td>Sport</td>
+        </tr>
+        <tr>
+            <td>Toy Poodle</td>
+            <td>Small</td>
+            <td>Stubborn</td>
+            <td>Companion</td>
+        </tr>
+        <tr>
+            <td>Pug</td>
+            <td>Small</td>
+            <td>Stubborn</td>
+            <td>Lap Dog</td>
+        </tr>
+    </tbody>
+</table>
 
 
 
@@ -380,7 +419,23 @@ $( "#quiz").click(function() {
   
 });
 
+$(document).ready(function () {
 
+    (function ($) {
+
+        $('#filter').keyup(function () {
+
+            var rex = new RegExp($(this).val(), 'i');
+            $('.searchable tr').hide();
+            $('.searchable tr').filter(function () {
+                return rex.test($(this).text());
+            }).show();
+
+        })
+
+    }(jQuery));
+
+});
 
 
     
