@@ -92,9 +92,9 @@
     
 </ul>
 <br />
-<button id="submit">Check</button>
-<p id="win"></span>Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail">Try again!</p>
+<button id="submit2">Check</button>
+<p id="win2"></span>Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail2">Try again!</p>
 </div>
 
       
@@ -200,7 +200,7 @@
   
 
 <img src="img/selfie.png" alt="" class="img-thumbnail pull-left hidden-xs">
-<legend class="control-label">Scratch <span class="glyphicon glyphicon-circle-arrow-up"></span>here!</legend>
+<legend class="control-label">Scratch <span class="glyphicon glyphicon-circle-arrow-up"></span> here!</legend>
   
 
 
@@ -343,7 +343,19 @@
     });
 });
 
-
+ $(function() {
+    var rules = ['q2-c']
+    $('#submit2').click(function() {
+        $('#win2,#fail2').hide();
+        if( $('input[name=q2]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
+            $("#win2").show();
+         }
+         else
+        {   
+            $("#fail2").show();
+        }
+    });
+});
      
 $(document).ready(function(){
     console.log("Document loaded!");
