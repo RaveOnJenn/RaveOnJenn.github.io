@@ -197,13 +197,18 @@
 
 
 
-  
-    <img src="img/selfie.png" alt="doggie" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <style>
+  #toggle {
+   <img src="img/selfie.png" alt="doggie" />
+  }
+  </style>
+    
 
 
 <legend class="control-label">Scratch <span class="glyphicon glyphicon-circle-arrow-up"></span> here!</legend>
   
-
+<div id="toggle"></div>
 
 
 
@@ -384,14 +389,8 @@ $( "#quiz").click(function() {
   
 });
 
-$("#doggie").hover(function(){
-
-    $(this).find("img").fadeOut(2000);
-
-}, function() {
-
-    $(this).find("img").fadeIn(3000);
-
+$( document ).click(function() {
+  $( "#toggle" ).effect( "shake" );
 });
 
 
