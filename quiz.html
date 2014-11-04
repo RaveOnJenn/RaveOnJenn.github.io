@@ -10,7 +10,12 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
      <link href= "css/custom.css" rel= "stylesheet">
-      
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <style>
+  #toggle {
+   
+  }
+  </style>
     
   </head>
   <body>
@@ -197,18 +202,13 @@
 
 
 
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
-  <style>
-  #toggle {
-   <img src="img/selfie.png" alt="doggie" />
-  }
-  </style>
-    
-
+  
+    <div id="toggle">
+<img src="img/selfie.png" alt="doggie" />
 
 <legend class="control-label">Scratch <span class="glyphicon glyphicon-circle-arrow-up"></span> here!</legend>
   
-<div id="toggle"></div>
+</div>
 
 
 
@@ -389,7 +389,7 @@ $( "#quiz").click(function() {
   
 });
 
-$( document ).click(function() {
+$( "#doggie" ).click(function() {
   $( "#toggle" ).effect( "shake" );
 });
 
