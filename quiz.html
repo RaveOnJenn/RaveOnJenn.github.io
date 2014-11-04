@@ -290,7 +290,9 @@
         </figcaption>
     </figure>
 
-
+<div id="kitten">
+    <img src="http://cdn.css-tricks.com/images/kitten.jpg" alt="Kitten" />
+</div>
 
 
 
@@ -383,13 +385,13 @@ $( "#quiz").click(function() {
   
 });
 
-$("#doggie").hover(function(){
+$("#kitten").hover(function(){
 
     $(this).find("img").fadeOut();
 
 }, function() {
 
-    $(this).find("webtest.png").fadeIn();
+    $(this).find("img").fadeIn();
 
 });
 
