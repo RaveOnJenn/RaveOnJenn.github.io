@@ -193,5 +193,14 @@ figcaption a:hover {
   background: #fff;
 }
 
-
+/*picture fun with django's tickle*/
+div
+{    
+    background-image: "img/selfie.png";
+   background-size:100% 150px;
+    height:150px;
+    max-height:150px;
+    width:150px;
+    background-repeat:no-repeat;
+}
 

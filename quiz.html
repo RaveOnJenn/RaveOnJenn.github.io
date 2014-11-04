@@ -198,7 +198,8 @@
 
 
   
-
+<div>
+</div>
 <img src="img/selfie.png" alt="" class="img-thumbnail pull-left hidden-xs">
 <legend class="control-label">Scratch <span class="glyphicon glyphicon-circle-arrow-up"></span> here!</legend>
   
@@ -379,6 +380,15 @@ $( "#quiz").click(function() {
 
 
   
+});
+
+$(document).ready(function(){
+  $("div").mouseenter(function(){
+      $("div").animate({height:"250px" , width:"500px"},{duration: 1000, easing: 'easeOutBounce'});
+  });
+     $("div").mouseleave(function(){
+         $("div").animate({height:"150px", width:"150px"},{duration: 1000, easing: 'easeOutBounce'});
+  });
 });
 
 
