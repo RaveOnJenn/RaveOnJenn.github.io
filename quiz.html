@@ -589,7 +589,10 @@ $( "#quiz").click(function() {
 
   $( "fieldset" ).toggle( "slow" );
 
-$("#group").trigger('reset');
+
+$('.reset').on('click', function() {
+    $(this).closest('form').find('input[type=text], name, email, comment, textarea').val('');
+});
 
 //$('#form').clearForm()
   
