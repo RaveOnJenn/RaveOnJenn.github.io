@@ -47,7 +47,7 @@ $(document).ready(function(){
 			$('#myModal').modal();
 			submit.preventDefault();
 
-
+$('form').clearForm();
 
 
 
