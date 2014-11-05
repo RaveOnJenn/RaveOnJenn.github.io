@@ -45,7 +45,7 @@ $(document).ready(function(){
 			submit.preventDefault();
 		} else {
 			$('#myModal').modal();
-			$('form').clearForm();
+			
 			submit.preventDefault();
 
 
