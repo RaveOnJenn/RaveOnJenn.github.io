@@ -36,7 +36,7 @@ $(document).ready(function(){
 		}
 	}); //end focus out
 
-	$('button').click(function(submit){
+	$('#comments').click(function(submit){
 		if($('#name').val().length == 0) {
 			$('.name-group .help-block').text('Please enter your name.');
 			$('.name-group').attr({
