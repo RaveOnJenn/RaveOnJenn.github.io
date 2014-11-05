@@ -127,7 +127,7 @@
 
       
 
-<button id="submit" button class= "btn btn-danger btn-med">Check</button>
+<button id="answer" button class= "btn btn-danger btn-med">Check</button>
 <p id="win">Your answers are correct!</p><span class="glyphicon glyphicon-heart"></span>
 <p id="fail">Try again!</p>
 </fieldset>
@@ -541,7 +541,7 @@ And so it goes, four days have passed and I can't recall the last time we laughe
  
   $(function() {
     var rules = ['q1-c']
-    $('#submit').click(function() {
+    $('#answer').click(function() {
         $('#win,#fail').hide();
         if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
             $("#win").show();
