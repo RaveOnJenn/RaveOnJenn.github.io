@@ -44,8 +44,8 @@
         </div>
       </div>
     </div>
-    <title>Simple Quiz</title>
-  </head>
+   
+  
  
 
 <div class="jumbotron">
@@ -75,9 +75,9 @@
     <li><label><input type="radio" name="q1" id="q1-c">  None, he will look at you with sad eyes until you do it.</label></li>
     </ul>
 <br />
-<button id="submit">Check</button>
-<p id="win"></span>Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail">Try again!</p>
+<button id="submit1">Check</button>
+<p id="win1">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail1">Try again!</p>
 
 </div>
 
@@ -85,30 +85,30 @@
       <div class ='radio'>
       <h3>What is the best food for your Rat Terrier?</h3>
       <ul>
-    <li><label><input type="radio" name="q2" id="q2-a"checked> Broccoli</label></li>
+    <li><label><input type="radio" name="q2" id="q2-a" checked> Broccoli</label></li>
     <li><label><input type="radio" name="q2" id="q2-b"> Caviar</label></li>
     <li><label><input type="radio" name="q2" id="q2-c">  Whatever is in your hand, on it's way to your mouth.</label></li>
     
 </ul>
 <br />
-<button id="submit">Check</button>
-<p id="win"></span>Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail">Try again!</p>
+<button id="submit2">Check</button>
+<p id="win2">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail2">Try again!</p>
 </div>
 
       
 <div class ='radio'>
       <h3>What is a Rat Terrier's favourite outfit?</h3>
       <ul>
-    <li><label><input type="radio" name="q3" id="q3-a"checked> Sweats</label></li>
+    <li><label><input type="radio" name="q3" id="q3-a" checked> Sweats</label></li>
     <li><label><input type="radio" name="q3" id="q3-b"> Bikini</label></li>
     <li><label><input type="radio" name="q3" id="q3-c">  Anything by Stella McCartney.</label></li>
     
 </ul>
 <br />
-<button id="submit">Check</button>
-<p id="win"></span>Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail">Try again!</p>
+<button id="submit3">Check</button>
+<p id="win3">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail3">Try again!</p>
 </div>
 
       
@@ -116,33 +116,32 @@
 <div class ='radio'>
       <h3>Why does California have such a large Rat Terrier population?</h3>
           <ul>
-    <li><label><input type="radio" name="q4" id="q4-a"checked> Too many rats!</label></li>
+    <li><label><input type="radio" name="q4" id="q4-a" checked> Too many rats!</label></li>
     <li><label><input type="radio" name="q4" id="q4-b"> Affordable housing.</label></li>
     <li><label><input type="radio" name="q4" id="q4-c"> The waves dude!</label></li>
     
 </ul>
 <br />
-<button id="submit">Check</button>
-<p id="win">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail">Try again!</p>
+<button id="submit4">Check</button>
+<p id="win4">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail4">Try again!</p>
 </div>
 
 
 <div class ='radio'>
 <h3>Where is the best place for your Rat Terrier to sleep?</h3>
         <ul>
-    <li><label><input type="radio" name="q5" id="q5-a"checked> Outside in a dog house.</label></li>
+    <li><label><input type="radio" name="q5" id="q5-a" checked> Outside in a dog house.</label></li>
     <li><label><input type="radio" name="q5" id="q5-b"> In a bed by the fire.</label></li>
     <li><label><input type="radio" name="q5" id="q5-c"> Sharing a pillow with your husband.</label></li>
     
 </ul>
 <br />
-<button id="submit">Check</button>
-<p id="win">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail">Try again!</p>
+<button id="submit5">Check</button>
+<p id="win5">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail5">Try again!</p>
       </div>
-<b/>
-<b/>
+/*added numbers to all submits and iwin, fail ids*/
 
 
 
@@ -160,6 +159,7 @@
               <span class="help-block"></span>
             </fieldset2>
           </div>
+
           <div class="col-sm-5 form-group">
             <fieldset2>
                <label for="email" class="control-label">Your email:</label>
@@ -168,7 +168,7 @@
             <div class="col-sm-10 form-group">
           <label for="comments" class="control-label">Questions? Drop us a line!</label><span class="glyphicon glyphicon-heart"></span>
 
-          
+          </fieldset2>
 
           <textarea name="comments" class="form-control" 
                 rows="10" data-toggle="tooltip" title="Django says: Please write and say hi!" data-placement="bottom">
@@ -176,21 +176,18 @@
 
             </div>
          </div>
-        <button name="submit2" type="submit" class="btn btn-danger btn-lg">Send</button>
-      </form>
-   </div>
-               </fieldset2>
+         <div> /*added this*/
+        <button name="submit" type="submit" class="btn btn-danger btn-lg">Send</button>
+         </div>
+            /*moved fieldset close from here*/   
           </div>
         
         </div>
   </div>
 </div>
-    </fieldset>
+    
   </div>
 </div>
-</div>
-</div>
-   
 </div>
 </div>
 
@@ -204,10 +201,9 @@
        
 
   <div class="panel-heading">
-    <h3 class="panel-title">A Pome for an old dog</div>
+    <h3 class="panel-title">A Pome for an old dog</h3></div>
   <div class="panel-body">
 
-<h4></h4>
 
 <p>when the days and nights run together like wet paint </p>
 <p>with no dilineation</p>
@@ -227,7 +223,7 @@
 <p>of your</p>
 <p>self</p>
 
-<p><h4>For Buster: loved for 20 years<span class="glyphicon glyphicon-heart"</span></h4></p>
+<h4>For Buster: loved for 20 years<span class="glyphicon glyphicon-heart" ></span></h4>
   </aside>
   </div>
 </div>
@@ -240,14 +236,14 @@
       
        
 
-    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="accordion1">
 <div class="accordion-heading red">
   <div class="panel panel-danger">
     <div class="panel-heading">
       <h4 class="panel-title">
 
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-        <h4>What your Rat Terrier wants YOU to know!</h4> 
+        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+        <h5>What your Rat Terrier wants YOU to know!</h5> 
         </a>
       </h4>
     </div>
@@ -269,14 +265,14 @@
       
        
 
-    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="accordion2">
 <div class="accordion-heading red">
   <div class="panel panel-danger">
     <div class="panel-heading">
       <h4 class="panel-title">
 
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-        <h4>More Excellent Owner Info.</h4> 
+        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+        <h5>More Excellent Owner Info.</h5> 
         </a>
       </h4>
     </div>
@@ -297,14 +293,14 @@
       
        
 
-    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="accordion3">
 <div class="accordion-heading red">
   <div class="panel panel-danger">
     <div class="panel-heading">
       <h4 class="panel-title">
 
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-        <h4>How Django came home.</h4> 
+        <a data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+        <h5>How Django came home.</h5> 
         </a>
       </h4>
     </div>
@@ -344,14 +340,14 @@ And so it goes, four days have passed and I can't recall the last time we laughe
       
        
 
-    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="accordion4">
 <div class="accordion-heading red">
   <div class="panel panel-danger">
     <div class="panel-heading">
       <h4 class="panel-title">
 
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-        <h4>I am a Rat Terrier, hear me roar!</h4> 
+        <a data-toggle="collapse" data-parent="#accordion4" href="#collapseFour">
+        <h5>I am a Rat Terrier, hear me roar!</h4> 
         </a>
       </h4>
     </div>
@@ -371,14 +367,14 @@ And so it goes, four days have passed and I can't recall the last time we laughe
       
        
 
-    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="accordion5">
 <div class="accordion-heading red">
   <div class="panel panel-danger">
     <div class="panel-heading">
       <h4 class="panel-title">
 
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-        <h4>Food Dilemma!</h4> 
+        <a data-toggle="collapse" data-parent="#accordion5" href="#collapseFive">
+        <h5>Food Dilemma!</h5> 
         </a>
       </h4>
     </div>
@@ -396,14 +392,14 @@ And so it goes, four days have passed and I can't recall the last time we laughe
   </div>
 </aside>
 <aside class="col-sm-9">
-<div class="panel-group" id="accordion">
+<div class="panel-group" id="accordion6">
 <div class="accordion-heading red">
   <div class="panel panel-danger">
     <div class="panel-heading">
       <h4 class="panel-title">
 
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-        <h4>The Hard Parts</h4> 
+        <a data-toggle="collapse" data-parent="#accordion6" href="#collapseSix">
+        <h5>The Hard Parts</h5> 
         </a>
       </h4>
     </div>
