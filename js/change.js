@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 
         $('.resetInput').click(function(){ // used to reset input on successful submit.
-$('.form-horizontal')[0].reset();
+$('.name-group')[0].reset();
 });
 
 
