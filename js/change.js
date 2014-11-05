@@ -47,6 +47,14 @@ $(document).ready(function(){
 			$('#myModal').modal();
 			submit.preventDefault();
 
+$ ('success') .click(function (output) 
+{
+  
+  $('.control-label').reset();
+}
+
+
+
 		}
 
 	}); //end click
