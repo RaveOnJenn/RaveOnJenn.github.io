@@ -46,10 +46,11 @@ $(document).ready(function(){
 		} else {
 			$('#myModal').modal();
 			submit.preventDefault();
+			$("#contact_form").trigger("reset")
 		}
 	}); //end click
 
- 
+ //add in reset for this button
 
 
    
