@@ -46,8 +46,16 @@ $(document).ready(function(){
 		} else {
 			$('#myModal').modal();
 			submit.preventDefault();
-			$('#myModal').trigger('reset')
+
 		}
+$('button').click(function(submit){
+
+if ($('#myModal').modal();{
+
+$('#myModal').trigger('reset')
+
+}
+}
 	}); //end click
 
  //add in reset for this button
