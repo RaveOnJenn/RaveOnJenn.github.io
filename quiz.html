@@ -611,22 +611,14 @@ $(document).ready(function () {
 
 });
 
-function clear_form_elements(id_name) {
-  jQuery("#"+id_name).find(':input').each(function() {
-    switch(this.type) {
-        case 'name':
-        case 'text':
-        case 'textarea':
-        case 'email':
-        case 'comments':       
-            jQuery(this).val('');
-            break;
-        case 'checkbox':
-        case 'radio':
-        case 'form-control':
-            this.checked = false;
-    }
-  });
+$.fn.clearForm = function() {
+  $( this ).
+    find( ':text, :name :email :password, textarea' ).
+      attr( 'value', '' ).end().
+    find( ':checkbox, :radio' ).
+      attr( 'checked', false ).end().
+    find( 'select' ).
+      attr( 'selectedIndex', -1 );
 }
     
   }); //end ready
