@@ -50,7 +50,7 @@ $(document).ready(function(){
 		}
 $('button').click(function(submit){
 
-if ($('#myModal').modal();{
+
 
 $('#myModal').trigger('reset')
 
