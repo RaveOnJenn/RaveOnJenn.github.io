@@ -141,7 +141,7 @@
 <p id="win5">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
 <p id="fail5">Try again!</p>
       </div>
-/*added numbers to all submits and iwin, fail ids*/
+
 
 
 
@@ -176,10 +176,9 @@
 
             </div>
          </div>
-         <div> /*added this*/
-        <button name="submit" type="submit" class="btn btn-danger btn-lg">Send</button>
+         <div>         <button name="submit" type="submit" class="btn btn-danger btn-lg">Send</button>
          </div>
-            /*moved fieldset close from here*/   
+            
           </div>
         
         </div>
@@ -546,14 +545,14 @@ And so it goes, four days have passed and I can't recall the last time we laughe
  
   $(function() {
     var rules = ['q1-c']
-    $('#submit').click(function() {
-        $('#win,#fail').hide();
+    $('#submit1').click(function() {
+        $('#win1,#fail'1).hide();
         if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
-            $("#win").show();
+            $("#win1").show();
          }
          else
         {   
-            $("#fail").show();
+            $("#fail1").show();
         }
         
     });
