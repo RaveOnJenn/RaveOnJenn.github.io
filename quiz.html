@@ -466,7 +466,7 @@ And so it goes, four days have passed and I can't recall the last time we laughe
 
           <div class="col-sm-6 form-group name-group">
             
-              <label for="name" class="control-label">Your name: <span class="glyphicon glyphicon-star"></span></label>
+              <label for="name" class="control-label" value= "">Your name: <span class="glyphicon glyphicon-star"></span></label>
               <input type="text" id="name" class="form-control">
               <span class="help-block"></span>
             
@@ -474,12 +474,12 @@ And so it goes, four days have passed and I can't recall the last time we laughe
 
           <div class="col-sm-6 form-group">
             
-               <label for="email" class="control-label">Your email:</label>
+               <label for="email" class="control-label" value= "">Your email:</label>
                <input type="text" id="email" class="form-control">
                <div class="row">
             <div class="col-sm-12 form-group">
               
-          <label for="comments" class="control-label">Questions? Drop us a line!</label><span class="glyphicon glyphicon-heart"></span>
+          <label for="comments" class="control-label" value= "">Questions? Drop us a line!</label><span class="glyphicon glyphicon-heart"></span>
 
         
 
@@ -611,15 +611,7 @@ $(document).ready(function () {
 
 });
 
-$.fn.clearForm = function() {
-  $( this ).
-    find( ':text, :name :email :password, textarea' ).
-      attr( 'value', '' ).end().
-    find( ':checkbox, :radio' ).
-      attr( 'checked', false ).end().
-    find( 'select' ).
-      attr( 'selectedIndex', -1 );
-}
+
     
   }); //end ready
 
