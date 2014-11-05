@@ -46,7 +46,7 @@ $(document).ready(function(){
 		} else {
 			$('#myModal').modal();
 			submit.preventDefault();{
-				$('#modalElement').data('modal', null);
+				$('#myModal').data('modal', null);
 			}
 
 
