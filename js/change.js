@@ -48,14 +48,7 @@ $(document).ready(function(){
 			submit.preventDefault();
 
 		}
-$('button').click(function(submit){
 
-
-
-$('#myModal').trigger('reset')
-
-
-}
 	}); //end click
 
  //add in reset for this button
