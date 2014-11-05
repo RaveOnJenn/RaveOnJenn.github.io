@@ -74,7 +74,7 @@ a:hover {
 .jumbotron {
   color: #183152;
   text-decoration: none;
-  background-color: danger !important;
+
 }
 
 #win,#fail
@@ -194,4 +194,6 @@ figcaption a:hover {
   background: #fff;
 }
 
-
+.other-color{
+    background: danger
+  }
