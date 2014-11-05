@@ -45,10 +45,7 @@ $(document).ready(function(){
 			submit.preventDefault();
 		} else {
 			$('#myModal').modal();
-			submit.preventDefault();{
-				$('#myModal').data('modal', null);
-			}
-
+			submit.preventDefault();
 
 		}
 
