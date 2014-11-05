@@ -49,6 +49,9 @@ $(document).ready(function(){
 			submit.preventDefault();
 
 
+        $('.resetInput').click(function(){ // used to reset input on successful submit.
+$('.form-horizontal')[0].reset();
+});
 
 
 
