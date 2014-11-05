@@ -127,7 +127,7 @@
 
       
 
-<button id="answer" button class= "btn btn-danger btn-med">Check</button>
+<button id="submit" button class= "btn btn-danger btn-med">Check</button>
 <p id="win">Your answers are correct!</p><span class="glyphicon glyphicon-heart"></span>
 <p id="fail">Try again!</p>
 </fieldset>
@@ -518,10 +518,10 @@ And so it goes, four days have passed and I can't recall the last time we laughe
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Congratulations you're in the Pack!</h4>
+        <h4 class="modal-title"<p class="text-center"><em><strong>Congratulations, you're in the Pack!</strong</em></p></h4>
       </div>
       <div class="modal-body">
-        <p>~Thanks for joining the Rat Pack~</p><p> You will hear back from us as soon as we get back from walking the dog!</p>
+        <p><p class="text-center"><em><strong>~Thanks for joining the Rat Pack~</p><p> You will hear back from us as soon as we get back from walking the dog!</strong</em></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -541,7 +541,7 @@ And so it goes, four days have passed and I can't recall the last time we laughe
  
   $(function() {
     var rules = ['q1-c']
-    $('#answer').click(function() {
+    $('#submit').click(function() {
         $('#win,#fail').hide();
         if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
             $("#win").show();
