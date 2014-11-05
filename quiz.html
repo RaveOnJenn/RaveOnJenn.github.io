@@ -75,9 +75,9 @@
     <li><label><input type="radio" name="q1" id="q1-c">  None, he will look at you with sad eyes until you do it.</label></li>
     </ul>
 <br />
-<button id="submit1">Check</button>
-<p id="win1">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail1">Try again!</p>
+<button id="submit">Check</button>
+<p id="win">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail">Try again!</p>
 
 </div>
 
@@ -91,9 +91,9 @@
     
 </ul>
 <br />
-<button id="submit2">Check</button>
-<p id="win2">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail2">Try again!</p>
+<button id="submit">Check</button>
+<p id="win">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail">Try again!</p>
 </div>
 
       
@@ -106,9 +106,9 @@
     
 </ul>
 <br />
-<button id="submit3">Check</button>
-<p id="win3">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail3">Try again!</p>
+<button id="submit">Check</button>
+<p id="win">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail">Try again!</p>
 </div>
 
       
@@ -122,9 +122,9 @@
     
 </ul>
 <br />
-<button id="submit4">Check</button>
-<p id="win4">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail4">Try again!</p>
+<button id="submit">Check</button>
+<p id="win">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail">Try again!</p>
 </div>
 
 
@@ -137,9 +137,9 @@
     
 </ul>
 <br />
-<button id="submit5">Check</button>
-<p id="win5">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
-<p id="fail5">Try again!</p>
+<button id="submit">Check</button>
+<p id="win">Your answer is correct!</p><span class="glyphicon glyphicon-heart"></span>
+<p id="fail">Try again!</p>
       </div>
 
 
@@ -545,14 +545,14 @@ And so it goes, four days have passed and I can't recall the last time we laughe
  
   $(function() {
     var rules = ['q1-c']
-    $('#submit1').click(function() {
-        $('#win1,#fail'1).hide();
+    $('#submit').click(function() {
+        $('#win,#fail').hide();
         if( $('input[name=q1]:checked').map(function(i,v) { return v.id; }).get().join(',') == rules[0] ) {
-            $("#win1").show();
+            $("#win").show();
          }
          else
         {   
-            $("#fail1").show();
+            $("#fail").show();
         }
         
     });
