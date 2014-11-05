@@ -46,7 +46,7 @@ $(document).ready(function(){
 		} else {
 			$('#myModal').modal();
 			submit.preventDefault();
-			$("#contact_form").trigger("reset")
+			$('#myModal').trigger('reset')
 		}
 	}); //end click
 
