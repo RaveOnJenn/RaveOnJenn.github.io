@@ -74,6 +74,7 @@ a:hover {
 .jumbotron {
   color: #183152;
   text-decoration: none;
+  bg-danger;
 }
 
 #win,#fail
