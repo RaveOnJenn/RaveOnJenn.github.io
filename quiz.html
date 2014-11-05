@@ -611,7 +611,22 @@ $(document).ready(function () {
 
 });
 
-
+function clear_form_elements(id_name) {
+  jQuery("#"+id_name).find(':input').each(function() {
+    switch(this.type) {
+        case 'name':
+        case 'text':
+        case 'textarea':
+        case 'email':
+        case 'comments':       
+            jQuery(this).val('');
+            break;
+        case 'checkbox':
+        case 'radio':
+            this.checked = false;
+    }
+  });
+}
     
   }); //end ready
 

@@ -48,10 +48,7 @@ $(document).ready(function(){
 			submit.preventDefault();
 
 
-{
-  
-  $('.control-label').reset();
-}
+
 
 
 
