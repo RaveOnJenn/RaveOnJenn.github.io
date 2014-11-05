@@ -54,7 +54,7 @@ $('button').click(function(submit){
 
 $('#myModal').trigger('reset')
 
-}
+
 }
 	}); //end click
 
