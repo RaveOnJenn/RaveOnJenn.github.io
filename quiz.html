@@ -589,9 +589,7 @@ $( "#quiz").click(function() {
 
   $( "fieldset" ).toggle( "slow" );
 
-$('#modalElement').on('hidden', function(){
-    $(this).data('modal', null);
-});
+
 
 //$('#form').clearForm()
   
@@ -615,7 +613,9 @@ $(document).ready(function () {
 
 });
 
-
+$('#myModal').on('hidden', function(){
+    $(this).data('modal', null);
+});
     
   }); //end ready
 
