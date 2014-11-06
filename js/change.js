@@ -53,7 +53,7 @@ $(document).ready(function(){
 //$('.name-group')[0].reset();//can't get to work
 });
 
-$('#modalElement').data('modal', null);
+
 
 
 		
