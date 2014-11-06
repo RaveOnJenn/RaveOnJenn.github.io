@@ -49,11 +49,11 @@ $(document).ready(function(){
 			submit.preventDefault();
 
 
+}
 
-
-
-
-		}
+$('#modalElement').on('hidden', function(){
+    $(this).data('modal', null);
+});
 
 	}); //end click
 
