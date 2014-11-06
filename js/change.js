@@ -48,7 +48,7 @@ $(document).ready(function(){
 			
 			submit.preventDefault();
 
-$('#modalElement').on('hidden', function(){
+$('#myModal').on('hidden', function(){
     $(this).data('modal', null);
 });
 
