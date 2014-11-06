@@ -48,15 +48,12 @@ $(document).ready(function(){
 			
 			submit.preventDefault();
 
-}
-       // $('.resetInput').click(function(){ // used to reset input on successful submit.
-//$('.name-group')[0].reset();//can't get to work
-});
 
 
 
 
-		
+
+		}
 
 	}); //end click
 
