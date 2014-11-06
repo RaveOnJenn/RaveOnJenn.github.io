@@ -492,7 +492,7 @@ And so it goes, four days have passed and I can't recall the last time we laughe
          <div>         <button name="send" value "submit" class="btn btn-danger btn-lg">Send</button>
 
                            
-                             <button id="clear">Clear</button>
+                           <td><input type="reset" id="configreset" value="Reset"></td>
          </div>
             
           </div>
@@ -591,10 +591,7 @@ $( "#quiz").click(function() {
 
   $( "fieldset" ).toggle( "slow" );
 
-var control = $("#form-control");
-$("#clear").on("click", function () {
-    control.replaceWith( control = control.clone( true ) );
-});
+
 
 //$('#form').clearForm()
   
