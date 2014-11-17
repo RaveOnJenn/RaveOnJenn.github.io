@@ -1,26 +1,16 @@
-//adding image feature
 $(document).ready(function(){
-	$('#image').change(function(){
-		if($('#image').val() == 'rat1') {
-			$('#canvas1').drawImage({
-				source: 'img/RatTerrier.png',
-				x: 365,
-				y: 260
-			});
-		} else if($('#image').val() == 'rat2') {
-			$('#canvas1').drawImage({
-				source: 'img/RatTerrier2.png',
-				x: 365,
-				y: 260
-			});
-		} else if($('#image').val() == 'clear') {
-			$('#canvas1').drawImage({
-				source: '',
-				x: 365,
-				y: 260
-			});
-		
+	$('#create').click(function(){
+		var imgsrc = $('#image').val();
+		switch(imgsrc){
+			case 'rat1':
+				imgsrc = "img/RatTerrier.png";
+				break;
+			case 'rat2':
+				imgsrc = "img/RatTerrier2.png";
+				break;
 			
-		} //end if
+			default: 
+				imgsrc = "img/RatTerrier.png";
+		} //end switch
 
 		}); //end ready
