@@ -11,9 +11,41 @@
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href= "css/custom.css" rel= "stylesheet">
- 
+ <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      #buttons {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+      }
+      #buttons > input {
+        padding: 10px;
+        display: block;
+        margin-top: 5px;
+      }
   </head>
    <body>
+    <canvas id="can" width="578" height="200"></canvas>
+    <div id="buttons">
+      <input type="button" id="clear" value="Clear">
+    </div>
+    <script>
+      var canvas = document.getElementById('canvas1');
+      var context = canvas.getContext('2d');
+
+
+      // bind event handler to clear button
+      document.getElementById('clear').addEventListener('click', function() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+      }, false);
+
+    </script>
+
+
+    
  <div class="container">
 
    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
