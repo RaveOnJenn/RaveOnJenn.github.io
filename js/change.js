@@ -191,7 +191,7 @@ function prepareCanvas()
 				y: 260
 			});
 		
-			
+			});
 		} //end if
 
 	// Add mouse events
