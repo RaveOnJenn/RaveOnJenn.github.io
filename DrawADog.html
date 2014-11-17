@@ -201,11 +201,13 @@
             <option value="rat2">Rattie 2</option>
            <option value="clear">Draw My Own</option>
         </select>
- 
+ <body onload="draw();">
    <div id="canvasDiv">
       <!-- It's bad practice (to me) to put your CSS here.  I'd recommend the use of a CSS file! -->
-      <canvas id="canvas1" width="500px" height="500px" style="border:2px solid #000000;"></canvas>
+      <canvas id="canvas1" width="500px" height="500px" style="border:2px solid #000000;"></canvas><div style="display:none;">
+     <img id="source" src="img/RatTerrier2.png" width="267" height="210">
    </div
+</div>
 
    <footer class="row">
          <p><small>Copyright Jenn Ashton 2014 </small></p>

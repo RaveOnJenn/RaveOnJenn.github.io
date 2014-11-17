@@ -4,6 +4,23 @@
     <title>Drawing Page</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
         <script type="text/javascript">
+
+        body {
+  background: 0 -100px repeat-x url(https://mdn.mozillademos.org/files/5415/bg_gallery.png) #4F191A;
+  margin: 10px;
+}
+
+img {
+  display: none;
+}
+
+table {
+  margin: 0 auto;
+}
+
+td {
+  padding: 15px;
+}
             var canvasMgr;
             function CanvasManager(canvasId) {
                 this.canvas = $('#' + canvasId);
