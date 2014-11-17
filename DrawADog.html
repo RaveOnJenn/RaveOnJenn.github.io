@@ -2,21 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-   
+  
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Somebody's Dog</title>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href= "css/custom.css" rel= "stylesheet">
 
- 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-  
-   
- <link href= "css/custom.css" rel= "stylesheet">
-
-
-   
   </head>
   <body>
-    <div class="container">
+ <div class="container">
 
    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
@@ -43,69 +39,30 @@
               
               <button type="submit" class="btn">Fetch!</button>
             </form>
-          </div>
+          </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-  
+<div id="canvasDiv"></div>
+<div>
+        <label for="image">Select A Rattie to Colour!</label>
+        <select id="image">
+            <option checked>Please select one:</option>
+            <option value="rat1">Rattie 1</option>
+            <option value="rat2">Rattie 2</option>
+           <option value="clear">Draw My Own</option>
+        </select>
 
-    
-
-<div class="jumbotron">
-      <img src="img/sketch.jpg" alt="" class="pull-right hidden-xs">
-        <h2> Drop us a Line!</h2>
-       
-
-    </div>
-<div class="form-group">
-
-                <h3><span class="glyphicon glyphicon-heart"></span> Have a Rat Terrier or Rescue story? We'd love to hear from you!</h3>
-
-                <textarea name="comments" class="form-control" 
-                rows="10" data-toggle="tooltip" title="Django says: Please write and say hi!" data-placement="bottom">
-              </textarea>
-
-              </div>
-
-                
-              <div class="form-group">
-                  <button type="submit" class="btn btn-danger bn xs">Submit</button>
-              
-             
-  </div>
- <footer class="row">
+  	<footer class="row">
          <p><small>Copyright Jenn Ashton 2014 </small></p>
     </footer>
    
-
-    
- 
-
-    
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      $("textarea").tooltip();
-      $(".form-group.collapse").collapse();
-      $(function(){
-      $(".pause-slide").click(function(){
-         $("#myCarousel").carousel('pause');
-      });
-      $('a.btn-info').tooltip()
-    </script>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
+       <script src="js/jquery.min.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+       <script src="js/change.js"></script>
+       <script type="text/javascript"> $(document).ready(function() {
+       prepareCanvas();
+});
+  </script>
+    </body>
+       </html>
