@@ -32,17 +32,7 @@
     <div id="buttons">
       <input type="button" id="clear" value="Clear">
     </div>
-    <script>
-      var canvas = document.getElementById('canvas1');
-      var context = canvas.getContext('2d');
-
-
-      // bind event handler to clear button
-      document.getElementById('clear').addEventListener('click', function() {
-        context.clearRect(0, 0, canvas.width, canvas.height);
-      }, false);
-
-    </script>
+    
 
 
     
@@ -99,7 +89,17 @@
     </footer>
 
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
- 
+ <script>
+      var canvas = document.getElementById('canvas1');
+      var context = canvas.getContext('2d');
+
+
+      // bind event handler to clear button
+      document.getElementById('clear').addEventListener('click', function() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+      }, false);
+
+    </script>
    <script type="text/javascript">
       $(document).ready(function () {
          initialize();
