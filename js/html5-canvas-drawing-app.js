@@ -5,7 +5,8 @@ $(document).ready(function(){
 		if($('#image').val() == 'rat1') {
 			$('#canvas1').drawImage({
 				source: 'img/RatTerrier.png',
-				
+				x: 0,
+				y: 0
 			});
 		} else if($('#image').val() == 'rat2') {
 			$('#canvas1').drawImage({
