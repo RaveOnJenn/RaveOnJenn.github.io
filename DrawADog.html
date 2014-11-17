@@ -48,12 +48,12 @@
 
    <h1>Draw your own Rattie!</h1>
    <div>
-        <label for="image">Select A Rattie to Colour!</label>
+        <label for="image">Draw your own rattie and check out ours!</label>
         <select id="image">
             <option checked>Please select one:</option>
+            <option value="clear">Draw My Own</option>
             <option value="rat1">Rattie 1</option>
-            <option value="rat2">Rattie 2</option>
-           <option value="clear">Draw My Own</option>
+           <option value="rat2">Rattie2</option>
         </select>
      </div>
  
@@ -72,9 +72,7 @@
       $(document).ready(function () {
          initialize();
       });
- ratImage.onload = function() { resourceLoaded(); 
-   };
-   ratImage.src = "images/RatTerrier2.png";
+ 
 
       // works out the X, Y position of the click inside the canvas from the X, Y position on the page
       function getPosition(mouseEvent, sigCanvas) {
