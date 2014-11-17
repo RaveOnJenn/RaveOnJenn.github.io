@@ -11,22 +11,7 @@
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href= "css/custom.css" rel= "stylesheet">
- <style>
-      body {
-        margin: 0px;
-        padding: 0px;
-      }
-      #buttons {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-      }
-      #buttons > input {
-        padding: 10px;
-        display: block;
-        margin-top: 5px;
-      }
-    </style>
+ 
   </head>
   
 
@@ -214,20 +199,6 @@
       <canvas id="canvasSignature" width="500px" height="500px" style="border:2px solid #000000;"></canvas>
    </div
 
-   
-<div id="buttons">
-      <input type="button" id="clear" value="Clear">
-    </div>
-    <script>
-      var canvas = document.getElementById('myCanvas');
-      var context = canvas.getContext('2d');
-
-      // bind event handler to clear button
-      document.getElementById('clear').addEventListener('click', function() {
-        context.clearRect(0, 0, canvas.width, canvas.height);
-      }, false);
-
-    </script>
    <footer class="row">
          <p><small>Copyright Jenn Ashton 2014 </small></p>
     </footer>
