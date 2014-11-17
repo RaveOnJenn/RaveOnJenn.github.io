@@ -1,16 +1,47 @@
 $(document).ready(function(){
-	$('#create').click(function(){
-		var imgsrc = $('#image').val();
-		switch(imgsrc){
-			case 'rat1':
-				imgsrc = "img/RatTerrier.png";
-				break;
-			case 'rat2':
-				imgsrc = "img/RatTerrier2.png";
-				break;
+	$('#image').change(function(){
+		if($('#image').val() == 'rat1') {
+			$('#canvas1').drawImage({
+				source: 'img/RatTerrier.png',
+				x: 365,
+				y: 260
+			});
+		} else ($('#image').val() == 'rat2') {
+			$('#canvas1').drawImage({
+				source: 'img/RatTerrier2.png',
+				x: 365,
+				y: 260
 			
-			default: 
-				imgsrc = "img/RatTerrier.png";
-		} //end switch
+		
+			});
+		} //end if
+	}); //end change
 
-		}); //end ready
+	$('#create').click(function(){
+		$('#canvas1').drawText({
+			fillStyle: '#fff',
+			strokeStyle: '#000',
+			strokeWidth: 3,
+			x: 365,
+			y: 50,
+			fontSize: '5em',
+			fontFamily: 'Impact, sans-serif',
+			text: 'Hello.'
+		})
+		.drawText({
+			fillStyle: '#fff',
+			strokeStyle: '#000',
+			strokeWidth: 3,
+			x: 365,
+			y: 470,
+			fontSize: '5em',
+			fontFamily: 'Impact, sans-serif',
+			text: 'This is line 2.'
+		}); //end draw text
+
+	}); //end click
+
+
+}); //end ready
+
+
