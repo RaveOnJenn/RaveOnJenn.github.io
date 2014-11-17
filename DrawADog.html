@@ -13,7 +13,58 @@
         <link href= "css/custom.css" rel= "stylesheet">
  
   </head>
-  
+   <body>
+ <div class="container">
+
+   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-inner">
+
+
+        
+          <button type="button" class="btn btn-navbar btn-xs" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="glyphicon glyphicon-arrow-down"></span>
+          MENU
+          </button>
+          <a class="brand" href="#"></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="Django.html">Django's Story</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="DrawADog.html">Draw a Dog!</a></li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Search">
+              
+              <button type="submit" class="btn">Fetch!</button>
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+   <h1>Draw your own Rattie!</h1>
+   <div>
+        <label for="image">Select A Rattie to Colour!</label>
+        <select id="image">
+            <option checked>Please select one:</option>
+            <option value="rat1">Rattie 1</option>
+            <option value="rat2">Rattie 2</option>
+           <option value="clear">Draw My Own</option>
+        </select>
+     </div>
+ 
+   <div id="canvasDiv">
+      <!-- It's bad practice (to me) to put your CSS here.  I'd recommend the use of a CSS file! -->
+      <canvas id="canvas1" width="500px" height="500px" style="border:2px solid #000000;"></canvas>
+   </div
+
+   <footer class="row">
+         <p><small>Copyright Jenn Ashton 2014 </small></p>
+    </footer>
 
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
  
@@ -158,59 +209,8 @@
    
 </head>
  
-<body>
-   <body>
- <div class="container">
-
-   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-
-      <div class="navbar-inner">
 
 
-        
-          <button type="button" class="btn btn-navbar btn-xs" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="glyphicon glyphicon-arrow-down"></span>
-          MENU
-          </button>
-          <a class="brand" href="#"></a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="Django.html">Django's Story</a></li>
-              <li><a href="Contact.html">Contact</a></li>
-              <li><a href="quiz.html">Quiz</a></li>
-              <li><a href="DrawADog.html">Draw a Dog!</a></li>
-            </ul>
-            <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Search">
-              
-              <button type="submit" class="btn">Fetch!</button>
-            </form>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-   <h1>Draw your own Rattie!</h1>
-   <div>
-        <label for="image">Select A Rattie to Colour!</label>
-        <select id="image">
-            <option checked>Please select one:</option>
-            <option value="rat1">Rattie 1</option>
-            <option value="rat2">Rattie 2</option>
-           <option value="clear">Draw My Own</option>
-        </select>
-     </div>
- 
-   <div id="canvasDiv">
-      <!-- It's bad practice (to me) to put your CSS here.  I'd recommend the use of a CSS file! -->
-      <canvas id="canvas1" width="500px" height="500px" style="border:2px solid #000000;"></canvas>
-   </div
-
-   <footer class="row">
-         <p><small>Copyright Jenn Ashton 2014 </small></p>
-    </footer>
        <script src="js/jquery.min.js"></script>
        <script src="js/bootstrap.min.js"></script>
        <script src="js/jcanvas.min.js"></script>
