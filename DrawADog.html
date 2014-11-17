@@ -95,21 +95,7 @@
       $(document).ready(function () {
          initialize();
       });
- <canvas id="ca" width="578" height="200"></canvas>
-    <div id="buttons">
-      <input type="button" id="clear" value="Clear">
-    </div>
-    <script>
-      var canvas = document.getElementById('ca');
-      var context = canvas.getContext('2d');
-
-      
-      // bind event handler to clear button
-      document.getElementById('clear').addEventListener('click', function() {
-        context.clearRect(0, 0, canvas.width, canvas.height);
-      }, false);
-
-    </script>
+ 
 
       // works out the X, Y position of the click inside the canvas from the X, Y position on the page
       function getPosition(mouseEvent, sigCanvas) {
