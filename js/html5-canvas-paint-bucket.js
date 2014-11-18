@@ -313,8 +313,8 @@ var paintBucketApp = (function () {
 			//     context = document.getElementById('canvas').getContext("2d");
 
 			// Load images
-			/*backgroundImage.onload = resourceLoaded;*/
-			/*backgroundImage.src = "img/background.png";*/
+			backgroundImage.onload = resourceLoaded;
+			backgroundImage.src = "img/background.png";
 
 			swatchImage.onload = resourceLoaded;
 			swatchImage.src = "img/paint-outline.png";
