@@ -24,4 +24,10 @@ $(document).ready(function(){
 			});
 		} //end if
 	}); //end change
+
+
+	$('#clear').click(function(){
+		$('#canvas1').clearCanvas();
+	}); //end click-clear
+	
 	}); //end ready
