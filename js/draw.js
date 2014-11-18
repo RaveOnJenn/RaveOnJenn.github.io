@@ -1,4 +1,21 @@
-function memetext(){
+$(document).ready(function(){
+    $('#create').click(function(){
+        var imgsrc = $('#image').val();
+        switch(imgsrc){
+            case 'duck':
+                imgsrc = "img/kittenduck.jpg";
+                break;
+            case 'heart':
+                imgsrc = "img/puppylove.jpg";
+                break;
+            case 'puppy':
+                imgsrc = "img/gspuppy.jpg";
+                break;
+            default: 
+                imgsrc = "img/grumpycat.jpg";
+        } //end switch
+
+        function memetext(){
             var line1 = $('#line1').val().toUpperCase();
             var line2 = $('#line2').val().toUpperCase();
 
@@ -31,3 +48,8 @@ function memetext(){
             y: 260,
             load: memetext
         }); //end draw image
+
+    }); //end click
+
+
+}); //end ready
