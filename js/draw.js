@@ -35,7 +35,8 @@ $(document).ready(function(){
             load: memetext
         }); //end draw image
 
-    }); //end click
+   //end click
+
 $('#clear').click(function(){
         $('#canvas1').clearCanvas();
     }); //end click-clear
