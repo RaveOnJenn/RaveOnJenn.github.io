@@ -1,28 +1,23 @@
 
 $(document).ready(function(){
-    $('#image').change(function(){
-        if($('#image').val() == 'rat1') {
-            $('#canvas1').drawImage({
-                source: 'img/RatTerrier.png',
-                x: 365,
-                y: 260
-            });
-        } else if($('#image').val() == 'rat2') {
-            $('#canvas1').drawImage({
-                source: 'img/RatTerrier2.png',
-                x: 365,
-                y: 260
-            
-        
-            });
-            } else  {
-            $('#canvas1').drawImage({
-                source: '',
-                x: 365,
-                y: 260
-            });
-        } //end if
-    }); //end change
+ $('#button1').click(function(){
+        $('#canvas1').drawEllipse({
+  fillStyle: '#FFFF7E',
+  x: 250, y: 100,
+  width: 200, height: 200
+});
+          .drawEllipse(({
+  fillStyle: '#C6E2FF',
+  x: 250, y: 150,
+  width: 200, height: 100
+});
+          .drawArc({
+            fillStyle: '#345678',
+            x: 300,
+            y: 150,
+            radius: 100
+        }); //end draw arc
+    }); // end circle click  
 
 
     $('#clear').click(function(){
