@@ -50,6 +50,8 @@ $(document).ready(function(){
         }); //end draw image
 
     }); //end click
-
+$('#clear').click(function(){
+        $('#canvas1').clearCanvas();
+    }); //end click-clear
 
 }); //end ready
