@@ -20,8 +20,8 @@ var paintBucketApp = (function () {
 	"use strict";
 
 	var context,
-		canvasWidth = 490,
-		canvasHeight = 220,
+		canvasWidth = 890,
+		canvasHeight = 420,
 		colorPurple = {
 			r: 203,
 			g: 53,
