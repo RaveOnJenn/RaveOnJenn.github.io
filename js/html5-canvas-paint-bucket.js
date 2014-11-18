@@ -314,10 +314,10 @@ var paintBucketApp = (function () {
 
 			// Load images
 			backgroundImage.onload = resourceLoaded;
-			backgroundImage.src = "images/background.png";
+			backgroundImage.src = "img/background.png";
 
 			swatchImage.onload = resourceLoaded;
-			swatchImage.src = "images/paint-outline.png";
+			swatchImage.src = "img/paint-outline.png";
 
 			outlineImage.onload = function () {
 				context.drawImage(outlineImage, drawingAreaX, drawingAreaY, drawingAreaWidth, drawingAreaHeight);
@@ -333,7 +333,7 @@ var paintBucketApp = (function () {
 				colorLayerData = context.getImageData(0, 0, canvasWidth, canvasHeight);
 				resourceLoaded();
 			};
-			outlineImage.src = "images/RatTerrier2.png";
+			outlineImage.src = "img/RatTerrier2.png";
 		};
 
 	return {
