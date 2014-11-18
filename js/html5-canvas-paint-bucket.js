@@ -333,7 +333,7 @@ var paintBucketApp = (function () {
 				colorLayerData = context.getImageData(0, 0, canvasWidth, canvasHeight);
 				resourceLoaded();
 			};
-			outlineImage.src = "images/watermelon-duck-outline.png";
+			outlineImage.src = "images/RatTerrier2.png";
 		};
 
 	return {
