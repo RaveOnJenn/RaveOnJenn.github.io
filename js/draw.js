@@ -1,7 +1,7 @@
 var canvas = document.getElementById('canvas1');
 var ctx = canvas.getContext('2d');
 var x = 80;
-var y = 110;
+var y = 90;
 
 ctx.font = "bold 36px sans-serif";
 ctx.fillStyle = "#104E8B";
