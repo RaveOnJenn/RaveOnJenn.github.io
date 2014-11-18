@@ -4,7 +4,7 @@ var x = 80;
 var y = 110;
 
 ctx.font = "bold 36px sans-serif";
-ctx.fillStyle = "blue";
+ctx.fillStyle = "#104E8B";
 $('#entertext').click(function(){
     ctx.fillText($("#words").val(), x, y);
 });
