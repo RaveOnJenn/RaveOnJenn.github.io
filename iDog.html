@@ -103,7 +103,7 @@
 //<![CDATA[
 $(document).ready(function(){
 
-  $("#jquery_jplayer_1").jPlayer({
+  $("#jquery_jplayer_2").jPlayer({
     ready: function () {
       $(this).jPlayer("setMedia", {
         title: "Happy Holidays",
@@ -113,6 +113,7 @@ $(document).ready(function(){
     },
     swfPath: "../../dist/jplayer",
     supplied: "mpg",
+    cssSelectorAncestor: "#jp_container_2",
     size: {
       width: "640px",
       height: "360px",
