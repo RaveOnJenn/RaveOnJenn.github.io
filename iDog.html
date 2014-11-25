@@ -55,7 +55,7 @@
        </div>
 
 <div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
-  <div class="jp-type-playlist">
+  <div class="jp-type-single">
     <div id="jquery_jplayer_1" class="jp-jplayer"></div>
     <div class="jp-gui">
       <div class="jp-video-play">
@@ -94,7 +94,7 @@
         </div>
       </div>
     </div>
-    <div class="jp-playlist">
+    <div class="jp-single">
       <ul>
         <!-- The method Playlist.displayPlaylist() uses this unordered list -->
         <li>&nbsp;</li>
@@ -166,7 +166,7 @@
 
   $(document).ready(function(){
 
-  new jPlayerPlaylist({
+  new jPlayer({
     jPlayer: "#jquery_jplayer_1",
     cssSelectorAncestor: "#jp_container_1"
   }, [
