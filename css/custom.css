@@ -197,3 +197,9 @@ figcaption a:hover {
 .other-color{
     background: #95BFB8
   }
+  
+
+  #page-wrap {
+     width: 800px;
+     margin: 0 auto;
+}
