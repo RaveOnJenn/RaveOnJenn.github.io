@@ -99,36 +99,7 @@
 </div>
 </div>
 
-<script>
 
-$(document).ready(function(){
-
-  $("#jquery_jplayer_2").jPlayer({
-    ready: function () {
-      $(this).jPlayer("setMedia", {
-        title: "Happy Holidays",
-        mov: "assets/DjangoHoliday.mov",
-        poster: "assets/holiday.png"
-      });
-    },
-    swfPath: "../../dist/jplayer",
-    supplied: "mov",
-    cssSelectorAncestor: "#jp_container_2",
-   size: {
-      width: "640px",
-      height: "360px",
-      cssClass: "jp-video-360p"
-    },
-    useStateClassSkin: true,
-    autoBlur: false,
-    smoothPlayBar: true,
-    keyEnabled: true,
-    remainingDuration: true,
-    toggleDuration: true
-  });
-});
-//]]>
-</script>
 
      
        <script src="js/bootstrap.min.js"></script>
@@ -140,14 +111,14 @@ $(document).ready(function(){
         ready: function () {
           $(this).jPlayer("setMedia", {
             title: "Happy Howlidays!",
-            m4v: "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
-            ogv: "http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv",
+            mov: "assets/DjangoHoliday.mov",
+            
             poster: "img/holiday.png"
           });
         },
         cssSelectorAncestor: "#jp_container_1",
-        swfPath: "/js",
-        supplied: "m4v, ogv",
+        swfPath: "js",
+        supplied: "mov",
         useStateClassSkin: true,
         autoBlur: false,
         smoothPlayBar: true,
