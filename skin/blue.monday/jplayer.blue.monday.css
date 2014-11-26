@@ -11,6 +11,8 @@
  * Author: Silvia Benvenuti
  * Skin Version: 5.1 (jPlayer 2.8.0)
  * Date: 13th November 2014
+ * Revised to JPlayer Christmas Skin by: Jenn Ashton
+ * Date: November 25th, 2014;
  */
 
 .jp-audio *:focus,
@@ -35,7 +37,7 @@
 
 	font-family:Verdana, Arial, sans-serif;
 	line-height:1.6;
-	color: #666;
+	color: #B20100;
 	border:2px solid #B20100;
 	background-color:#eee;
 }
@@ -376,7 +378,7 @@
 .jp-playlist {
 	width:100%;
 	background-color:#ccc;
-	border-top:1px solid #009be3;
+	border-top:1px solid #B20100;
 }
 
 .jp-type-single .jp-details,
