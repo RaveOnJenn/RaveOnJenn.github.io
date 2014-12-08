@@ -206,11 +206,11 @@ figcaption a:hover {
 
 /*mobile mutt*/
 
-#oranges .ui-grid-a .ui-block-a {
+#chips .ui-grid-a .ui-block-a {
   width: 74%;
   padding-right: 1%;
 }
-#oranges .ui-grid-a .ui-block-b {
+#chips .ui-grid-a .ui-block-b {
   width: 25%;
 }
 .custom-corners .ui-bar {
@@ -228,8 +228,8 @@ figcaption a:hover {
 }
 
 @media all and (max-width: 720px) {
-  #oranges .ui-grid-a .ui-block-a,
-  #oranges .ui-grid-a .ui-block-b {
+  #chips .ui-grid-a .ui-block-a,
+  #chips .ui-grid-a .ui-block-b {
     width: 100%;
   }
   .ui-grid-c .ui-block-a,
