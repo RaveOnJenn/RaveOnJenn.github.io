@@ -5,12 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>Somebody's Dog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href= "css/custom.css" rel= "stylesheet">
+
     <link rel="stylesheet" href="themes/vintage.min.css" />
     <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href= "css/custom.css" rel= "stylesheet">
- </head>
+     <style>
+      #home , #found, #chips {
+            padding: 0 5%;
+            width: 98%;
+      }
+      .noname {
+           
+            font-weight: bold;
+      }
+    </style>
+     </head>
 
 
   
@@ -56,13 +67,13 @@
                 <ul>
                     <li><a href="#home" class="ui-btn-active"data-transition="flip">Missing Mutt?</a></li>
                     <li><a href="#found"data-transition="flip">Found Hound?</a></li>
-                    <li><a href="#">Microchips & Dip</a></li>
+                    <li><a href="#chips"data-transition="flip">Microchips & Dip</a></li>
                     
                 </ul>
             </nav>
       </header>
 
-
+<form>
                 <main data-role="main" class="ui-content ui-grid-a">
                   <div class="ui-grid-c">
                   <div class="ui-block-a">
@@ -70,14 +81,37 @@
                   <p>Out in the park and you've lost your pooch?</p>
                   <p><a href="Lost.html"><img src="img/Lost.png" alt="Lost! "></a></p>
                     <div data-role="navbar">
+ 
+ 
+
+
+ <div class="ui-field-contain">
+                  <label for="classes">How many hours has your dog been missing?</label>
+                  <p></p>
+                  <input name="number" min="0" max="96" id="classes" value="" type="number">
+            </div>
+
+
+<form>
+    <label for="flip-select-second">Turn on your dog's geo-locator.</label>
+    <select id="flip-select-second" name="flip-select" data-role="flipswitch">
+        <option>Off</option>
+        <option selected="">On</option>
+    </select>
+</form>
+<p>Click for your local search pages.</p>
+
    <ul>
-      <li><a href="#">Option 1</a></li>
-      <li><a href="#">Option 2</a></li>
-      <li><a href="#">Option 3</a></li>
+      <li><a href="#"class="ui-btn ui-btn-inline">SPCA</a></li>
+      <li><a href="#"class="ui-btn ui-btn-inline">Lost FB</a></li>
+      <li><a href="#"class="ui-btn ui-btn-inline">RCMP</a></li>
    </ul>
+
+
 </div>
                     </div>
                 </div>
+              </form>
 </main>
 
    <footer class="row">
@@ -93,38 +127,59 @@
                 <ul>
                     <li><a href="#home" class="ui-btn-active"data-transition="flip">Missing Mutt?</a></li>
                     <li><a href="#found"data-transition="flip">Found Hound?</a></li>
-                    <li><a href="#">Microchips & Dip</a></li>
+                    <li><a href="#chips"data-transition="flip">Microchips & Dip</a></li>
                 </ul>
             </nav>
         </header>
-
+<form>
         <main data-role="main" class="ui-content ui-grid-a">
                 <div class="ui-grid-c">
                 <div class="ui-block-a">
                   <h3>Found Hound?</h3>
                   <p>Out for a walk and found a Flandoodle?</p>
+
                     <p><a href="found.html"><img src="img/found.png" alt="Found! "></a></p>
-                    <ul data-role="listview" data-filter="true">
-   <li><a href="fixture.html">Full fixture</a>
-   <li data-role="list-divider">Group A
-   <li>Argentina
-   <li>Nigeria
-   <li>England
-   <li>Japan
-   <li data-role="list-divider">Group B
-   <li>United States
-       <span class="ui-li-count">4</span>
-   <li>Mexico
-   <li>Korea
-   <li>Greece
-   <li data-role="list-divider">Group C
-   <li>Germany
-   <li>Finland
-   <li>Chile
-   <li>South Africa
+
+<p>Please enter all your information below.</p>
+               
+                 <div class="ui-field-contain">
+          <label for="comments">Details:</label>
+          <textarea id="comments"></textarea>
+        </div>
+       
+        <div class="ui-field-contain">
+        <label for="name">License:</label>
+        <input type="text" id="name">
+                <span class="noname"></span>
+        </div>
+        <div class="ui-field-contain">
+          <label for="email">Email:</label>
+          <input type="text" id="email">
+        </div>
+        <div class="ui-field-contain">
+          <label for="email">Cell:</label>
+          <input type="text" id="email">
+        </div>
+        <button name="submit" type="submit" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-heart">Submit</button>
+      
+
+       
+
+<p>If the dog you found is injured, please click below for your closest animal emergency hospital.</p>
+<ul data-role="listview" data-inset="true">
+    <li><a href="#"><img src="../_assets/img/flag.png"  alt="France" class="ui-li-icon ui-corner-none">West Hollywood</a></li>
+    <li><a href="#"><img src="../_assets/img/flag.png" alt="Germany" class="ui-li-icon">Vancouver</a></li>
+    <li><a href="#"><img src="../_assets/img/flag.png" alt="Great Britain" class="ui-li-icon">Boston</a></li>
+    <li><a href="#"><img src="../_assets/img/flag.png" alt="Finland" class="ui-li-icon">London</a></li>
+    <li><a href="#"><img src="../_assets/img/flag.png" alt="United States" class="ui-li-icon ui-corner-none">NYC</a></li>
 </ul>
+  
+
+      
+
                     </div>
                 </div>
+                </form>
 </main>
 
 <footer class="row">
@@ -133,40 +188,46 @@
     </section>
 
 
-<section data-role="page" id="oranges" data-theme="c">
+<section data-role="page" id="chips" data-theme="c">
         <header data-role="header" data-position="fixed">
             <h1>Microchips & Dip</h1>
             <nav data-role="navbar">
                 <ul>
-                  <li><a href="#home" class="ui-btn-active"data-transition="flip">Missing Mutt?</a></li>
+                  <li><a href="#home" data-transition="flip">Missing Mutt?</a></li>
                     <li><a href="#found"data-transition="flip">Found Hound?</a></li>
-                    <li><a href="#">Microchips & Dip</a></li>
+                    <li><a href="#chips"class="ui-btn-active"data-transition="flip">Microchips & Dip</a></li>
                 </ul>
             </nav>
         </header>
-
+<form>
        <main data-role="main" class="ui-content ui-grid-a">
                 <div class="ui-grid-c">
                 <div class="ui-block-a">
                   <h3>Microchips & Dip</h3>
                   <p>Let's help out our lost and found friends and all micro- 'chip' in!</p>
                     <p><a href="chips.html"><img src="img/chips.png" alt="Chips! "></a></p>
+
+                    <p>Click below to order microchips.</p>
                     <div data-role="controlgroup" data-direction="horizontal">
-   <a href="#" data-role="button">Button 1</a>
-   <a href="#" data-role="button">Button 1</a>
-   <a href="#" data-role="button">Button 1</a>
+   <a href="#" data-role="button">1</a>
+   <a href="#" data-role="button">2</a>
+   <a href="#" data-role="button">3</a>
 </div>
+<p>If you require more than three chips, please contact your local Veterinarian to order the dip.</p>
+
+
                     </div>
                   </div>
+                </form>
              </main>
-    </section>
+    
 
 
 <footer class="row">
          <p><small>Copyright Jenn Ashton 2014 </small></p>
     </footer>
    
-
+</section>
 
 
 
