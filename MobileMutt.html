@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>Somebody's Dog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href= "css/custom.css" rel= "stylesheet">
+ 
+    
 
     <link rel="stylesheet" href="themes/vintage.min.css" />
     <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+        <link href= "css/custom.css" rel= "stylesheet">
+          <link href="css/bootstrap.min.css" rel="stylesheet">
+           <link rel="prefetch" href="img/happypup.png">
      <style>
-      #home , #found, #chips {
+      #home, #found, #chips {
             padding: 0 3%;
             width: 97%;
       }
@@ -25,49 +28,18 @@
 
 
   
-    <div class="container">
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-     <div class="navbar-inner">
-
-
-           <button type="button" class="btn btn-navbar btn-xs" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="glyphicon glyphicon-arrow-down"></span>
-
-          MENU
-
-          </button>
-          <a class="brand" href="#"></a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="Django.html">Django's Story</a></li>
-              <li><a href="Contact.html">Contact</a></li>
-              <li><a href="quiz.html">Quiz</a></li>
-              <li><a href="DrawADog.html">Draw a Dog!</a></li>
-               <li><a href="iDog.html">iDog</a></li>
-               <li><a href="MobileMutt.html">Mobile Mutt</a></li>
-            </ul>
-            <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Search">
-              
-              <button type="submit" class="btn">Fetch!</button>
-            </form>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+    
 <body>
 
 
     <section data-role="page" id="home" data-theme="c">
       <header data-role="header" data-position="fixed">
-        <h1>Missing Mutt?</h1>
+        <h1>Mobile Mutt</h1>
           <nav data-role="navbar">
                 <ul>
-                    <li><a href="#home" class="ui-btn-active"data-transition="flip">Missing Mutt?</a></li>
-                    <li><a href="#found"data-transition="flip">Found Hound?</a></li>
-                    <li><a href="#chips"data-transition="flip">Microchips & Dip</a></li>
+                    <li><a href="#home" class="ui-btn-active"data-transition="flip" data-icon="heart">Missing Mutt?</a></li>
+                    <li><a href="#found"data-transition="flip" data-icon="heart">Found Hound?</a></li>
+                    <li><a href="#chips"data-transition="flip" data-icon="heart">Microchips & Dip</a></li>
                     
                 </ul>
             </nav>
@@ -75,8 +47,9 @@
      
 
      <h3 class="ui-bar ui-bar-a ui-corner-all">Mobile Mutt</h3>
+     
       <div class="ui-body ui-body-a ui-corner-all">
-          <p>Welcome to the home page of the Mobile Mutt site. Here you can track your lost dog, contact the authorities if you have found a lost pet, and order microchips for your pooches, all from your mobile device. Mobile Mutt helps keep your pups safe!</p>
+          <p><span><b>Welcome to the home page of the Mobile Mutt site. Here you can track your lost dog, contact the authorities if you have found a lost pet, and order microchips for your pooches, all from your mobile device. <p>Mobile Mutt helps keep your pups safe!</p></p></b></span>
       </div>
 
 
@@ -92,7 +65,7 @@
 
 
                     <div data-role="navbar">
- <div></div><p></p>
+
  <div class="ui-field-contain">
                 <p>How many hours has your dog been missing?</p>
                   <input name="number" min="0" max="96" id="classes" value="" type="number">
@@ -123,22 +96,23 @@
               </form>
 
 
-</main>
+
 
    <footer class="row">
          <p><small>Copyright Jenn Ashton 2014 </small></p>
     </footer>
+    </main>
     </section>
 
 
     <section data-role="page" id="found" data-theme="c">
         <header data-role="header" data-position="fixed">
-            <h1>Found Hound??</h1>
+            <h1>Mobile Mutt</h1>
             <nav data-role="navbar">
                 <ul>
-                    <li><a href="#home" class="ui-btn-active"data-transition="flip">Missing Mutt?</a></li>
-                    <li><a href="#found"data-transition="flip">Found Hound?</a></li>
-                    <li><a href="#chips"data-transition="flip">Microchips & Dip</a></li>
+                    <li><a href="#home" class="ui-btn-active"data-transition="flip"data-icon="heart">Missing Mutt?</a></li>
+                    <li><a href="#found"data-transition="flip"data-icon="heart">Found Hound?</a></li>
+                    <li><a href="#chips"data-transition="flip"data-icon="heart">Microchips & Dip</a></li>
                 </ul>
             </nav>
         </header>
@@ -148,11 +122,13 @@
                   <h3>Found Hound?</h3>
                   <p>Out for a walk and found a Flandoodle?</p>
 
-                    <p><a href="found.html"><img src="img/found.png" alt="Found!" class="img-thumbnail pull-right hidden-xs"></a></p>
+                 
+
+                    <p><a href="found.html"><img src="img/found.png" alt="Found!" class="img-thumbnail pull-left hidden-xs"></a></p>
 
 
                     
-<div></div><p></p>
+</div>
 <p>Please enter all your information below.</p>
                
                  <div class="ui-field-contain">
@@ -177,7 +153,7 @@
       
       <p>If the dog you found is injured, please click below for your closest animal emergency hospital.</p>
 <ul data-role="listview" data-inset="true">
-    <li><a href="#"><img src="img/flag.png"  alt="France" class="ui-li-icon ui-corner-none">West Hollywood</a></li>
+    <li><a href="#"><img src="img/flag.png"  alt="West Hollywood" class="ui-li-icon ui-corner-none">West Hollywood</a></li>
     <li><a href="#"><img src="img/flag.png" alt="Vancouver" class="ui-li-icon">Vancouver</a></li>
     <li><a href="#"><img src="img/flag.png" alt="Boston" class="ui-li-icon">Boston</a></li>
     <li><a href="#"><img src="img/flag.png" alt="London" class="ui-li-icon">London</a></li>
@@ -185,57 +161,91 @@
 </ul>
   
 
-      
+     
 
                     </div>
                 </div>
                 </form>
-</main>
+ <main data-role="content">
+                  <p>(Swipe left to see the potential result of your good deed!)</p>
+                 
+                  <div id="happy" class="start">
+                    </div>
+                  </main>
 
 <footer class="row">
 <p><small>Copyright Jenn Ashton 2014 </small></p>
     </footer>
+    </main>
     </section>
 
 
 <section data-role="page" id="chips" data-theme="c">
         <header data-role="header" data-position="fixed">
-            <h1>Microchips & Dip</h1>
+            <h1>Mobile Mutt</h1>
             <nav data-role="navbar">
                 <ul>
-                  <li><a href="#home" data-transition="flip">Missing Mutt?</a></li>
-                    <li><a href="#found"data-transition="flip">Found Hound?</a></li>
-                    <li><a href="#chips"class="ui-btn-active"data-transition="flip">Microchips & Dip</a></li>
+                  <li><a href="#home" data-transition="flip"data-icon="heart">Missing Mutt?</a></li>
+                    <li><a href="#found"data-transition="flip"data-icon="heart">Found Hound?</a></li>
+                    <li><a href="#chips"class="ui-btn-active"data-transition="flip"data-icon="heart">Microchips & Dip</a></li>
                 </ul>
             </nav>
         </header>
 <form>
+
        <main data-role="main" class="ui-content ui-grid-a">
                 <div class="ui-field-contain">
                   <h3>Microchips & Dip</h3>
                   <p>Let's help out our lost and found friends and all micro- 'chip' in!</p>
-                    <p><a href="chips.html"><img src="img/chips.png" alt="Chips!" class="img-thumbnail pull-right hidden-xs"></a></p>
-<div></div>
-                    <p>Click below to order microchips for your mutts.</p>
-                    <div data-role="controlgroup" data-direction="horizontal">
-   <a href="#" data-role="button">1</a>
-   <a href="#" data-role="button">2</a>
-   <a href="#" data-role="button">3</a>
-</div><div></div><p></p>
-<p>If you require more than three chips, please contact your local Veterinarian to order the dip.</p>
+                  <p>Click below to order microchips for your mutts.</p>
+<p>If you are a breeder and require more than 50 chips, please contact your local Veterinarian to order the dip.</p>
+                    <p><a href="chips.html"><img src="img/chips.png" alt="Chips!" class="img-thumbnail pull-left hidden-xs"></a></p>
+
+</div>
+                  <div class="ui-field-contain">
+  <fieldset data-role="controlgroup">
+    <h3>Size of Dog</h3>
+    <input type="radio" name="radio-choice-2" id="radio-choice-1" value="choice-1" checked="checked">
+    <label for="radio-choice-1">Toy</label>
+ 
+    <input type="radio" name="radio-choice-2" id="radio-choice-2" value="choice-2">
+    <label for="radio-choice-2">Small</label>
+ 
+    <input type="radio" name="radio-choice-2" id="radio-choice-3" value="choice-3">
+    <label for="radio-choice-3">Medium</label>
+ 
+    <input type="radio" name="radio-choice-2" id="radio-choice-4" value="choice-4">
+    <label for="radio-choice-4">Big as a Horse</label>
+  </fieldset>
+</div>  
+            <form>
+    <div class="ui-field-contain">
+        <div data-role="rangeslider">
+            <label for="range-7a">How many chips do you need?</label>
+            <input type="range" name="range-7a" id="range-7a" min="0" max="50" value="0">
+            <label for="range-7b">How many chips do you need?</label>
+            <input type="range" name="range-7b" id="range-7b" min="0" max="50" value="100">
+        </div>
+    </div>
+</form>
+<form>
+    <label for="textarea-1">Please provide your shipping address below.</label>
+    <textarea name="textarea-1" id="textarea-1"></textarea>
+</form>
+ <button name="submit" type="submit" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-btn-icon-left ui-icon-heart">Submit</button>
 
 
                     </div>
                   </div>
                 </form>
-             </main>
+            
     
 
 
 <footer class="row">
          <p><small>Copyright Jenn Ashton 2014 </small></p>
     </footer>
-   
+    </main>
 </section>
 
 
@@ -249,7 +259,14 @@
 
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  
+   <script>
+            $(document).ready(function() {
+                  $('main').bind('swipeleft', function(event) {
+                        $('#happy').removeClass().addClass('happypup');           
+                  });
+                  
+            });
+      </script>
     
     <script src="js/bootstrap.min.js"></script>
     <script>
