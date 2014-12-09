@@ -227,3 +227,30 @@ figcaption a:hover {
 
  
 }
+
+
+ 
+/*+ list tap*/
+.select_body {background:#a2cdf2 ; 
+  display: none;
+  color: #FFD700; 
+opacity: 08; 
+text-align: center;
+.float:right; 
+list-style:none; 
+width:99%; 
+margin: auto; 
+text-align: left; 
+
+
+padding: 10px; 
+z-index: 99; 
+cursor: pointer; 
+
+box-shadow: 1px 1px 1px 1px #FFD700; 
+
+
+    border: 6px solid;
+    border-radius: 25px;
+
+}

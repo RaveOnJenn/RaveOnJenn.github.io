@@ -16,7 +16,7 @@
 html {
 	font-size: 100%;
 }
-main,
+
 body,
 input,
 select,
@@ -245,6 +245,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 	text-shadow: 0 /*{a-page-shadow-x}*/ 1px /*{a-page-shadow-y}*/ 0 /*{a-page-shadow-radius}*/ #f3f3f3 /*{a-page-shadow-color}*/;
 }
 /* Body: Read-only lists, text inputs, collapsible content */
+
 .ui-body-a,
 .ui-page-theme-a .ui-body-inherit,
 html .ui-bar-a .ui-body-inherit,
@@ -261,7 +262,7 @@ html .ui-panel-page-container-a {
 	border-style: solid;
 }
 /* Links */
-.ui-page-theme-a a,
+.ui-page-theme-a a, 
 html .ui-bar-a a,
 html .ui-body-a a,
 html body .ui-group-theme-a a {
@@ -546,7 +547,7 @@ html head + body .ui-body-b.ui-focus {
 /* C
 -----------------------------------------------------------------------------------------------------------*/
 /* Bar: Toolbars, dividers, slider track */
-.ui-bar-c,
+.ui-bar-c, .select_body,
 .ui-page-theme-c .ui-bar-inherit,
 html .ui-bar-c .ui-bar-inherit,
 html .ui-body-c .ui-bar-inherit,

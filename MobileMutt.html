@@ -21,6 +21,8 @@
            
             font-weight: bold;
       }
+
+
     </style>
     </head>
 
@@ -29,6 +31,7 @@
  <section data-role="page" id="home" data-theme="c">
       <header data-role="header" data-position="fixed">
         <h1>Mobile Mutt</h1>
+       <a href = "" class = "quickNav">+ links</a>
           <nav data-role="navbar">
                 <ul>
                     <li><a href="#home" class="ui-btn-active"data-transition="flip" data-icon="heart">Missing Mutt?</a></li>
@@ -45,7 +48,18 @@
       </div>
 <form>
                 <main data-role="main" class="ui-content ui-grid-a">
+                  
                   <div class="ui-field-contain">
+
+
+                     <div class='select_body'>
+                      <ul>
+<li><a href="" >More information about Microchipping your dog.</a></li>
+<li><a href="" >Find Pet Hunters in your area.</a></li>
+<li><a href="" >Dog treat recipes that bring them running.</a></li>
+</ul>
+</div>
+
                   <h3>Missing Mutt??</h3>
                   <p>Out in the park and you've lost your pooch?</p>
                   <p><a href="Lost.html"><img src="img/Lost.png" alt="Lost! "class="img-thumbnail pull-left hidden-xs"></a></p>
@@ -54,6 +68,10 @@
                 <p>How many hours has your dog been missing?</p>
                   <input name="number" min="0" max="96" id="classes" value="" type="number">
             </div>
+
+            
+             
+
 <form>
     <label for="flip-select-second">Turn on your dog's geo-locator.</label>
     <select id="flip-select-second" name="flip-select" data-role="flipswitch">
@@ -209,7 +227,13 @@
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
+<script>
+$(function(){
+$('.quickNav' ).bind('tap', function(event){
+ $('.select_body').toggle();
+});
+});
+</script>
 <script>
    $(function(){
       
