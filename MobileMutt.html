@@ -24,12 +24,43 @@
             font-weight: bold;
       }
     </style>
+    <style>
+        #test {
+                background-color: #eee;
+                height: 320px;
+                margin: 0 auto;
+                width: 640px;
+        }
+        .quest {
+                background: #ccc;
+                display: block;
+                height: 240px;
+                margin: 0 auto;
+                opacity: 1;
+                width: 320px;
+        }
+ 
+        .tablet {
+                position: relative;
+        }
+ 
+        .tablet .quest {
+                position: absolute;
+                margin-left: -160px;
+        }
+</style>
      </head>
 
 
   
     
 <body>
+
+<div id="test">
+        <div class="quest quest1">Quest 1</div>
+        <div class="quest quest2">Quest 2</div>
+        <div class="quest quest3">Quest 3</div>
+</div>
 
 
     <section data-role="page" id="home" data-theme="c">
@@ -77,11 +108,11 @@
         <option selected="">On</option>
     </select>
 </form>
-
+<div>
 <p>Do you agree to let us use your phone's location to find your nearest SPCA?</p>
-<input type="checkbox" name="checkbox-mini" id="checkbox-mini-1" class="custom" data-mini="true">
-<label for="checkbox-mini-1">I agree</label>
-
+<input type="checkbox" name="checkbox" id="checkbox" class="custom" data="true">
+<label for="checkbox">I agree</label>
+</div>
 <p>Now click below for your local search pages.</p>
    <ul>
       <li><a href="#"class="ui-btn ui-btn-inline">SPCA</a></li>
@@ -110,8 +141,8 @@
             <h1>Mobile Mutt</h1>
             <nav data-role="navbar">
                 <ul>
-                    <li><a href="#home" class="ui-btn-active"data-transition="flip"data-icon="heart">Missing Mutt?</a></li>
-                    <li><a href="#found"data-transition="flip"data-icon="heart">Found Hound?</a></li>
+                    <li><a href="#home" data-transition="flip"data-icon="heart">Missing Mutt?</a></li>
+                    <li><a href="#found"class="ui-btn-active"data-transition="flip"data-icon="heart">Found Hound?</a></li>
                     <li><a href="#chips"data-transition="flip"data-icon="heart">Microchips & Dip</a></li>
                 </ul>
             </nav>
@@ -122,7 +153,7 @@
                   <h3>Found Hound?</h3>
                   <p>Out for a walk and found a Flandoodle?</p>
 
-                 
+
 
                     <p><a href="found.html"><img src="img/found.png" alt="Found!" class="img-thumbnail pull-left hidden-xs"></a></p>
 
@@ -166,17 +197,13 @@
                     </div>
                 </div>
                 </form>
- <main data-role="content">
-                  <p>(Swipe left to see the potential result of your good deed!)</p>
-                 
-                  <div id="happy" class="start">
-                    </div>
-                  </main>
+ 
 
 <footer class="row">
 <p><small>Copyright Jenn Ashton 2014 </small></p>
     </footer>
     </main>
+
     </section>
 
 
@@ -259,14 +286,7 @@
 
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-   <script>
-            $(document).ready(function() {
-                  $('main').bind('swipeleft', function(event) {
-                        $('#happy').removeClass().addClass('happypup');           
-                  });
-                  
-            });
-      </script>
+   
     
     <script src="js/bootstrap.min.js"></script>
     <script>
@@ -279,7 +299,96 @@
 
     $('a.btn-info').tooltip()
   </script>
-      
+      <script>
+$(document).ready(function(){
+        var $init_slider = function() {
+                $('#test').addClass('tablet');
+ 
+                $('.quest').css({
+                        opacity: 0,
+                        display: 'none',
+                        left: '100%'
+                });
+ 
+                $('.quest:first-child').css({
+                        opacity: 1,
+                        display: 'block',
+                        left: '50%'
+                });
+ 
+                $(function() {  
+                        var $count = 1;
+                        var $total = 3;
+                        var $left_bound = '10%';
+                        var $center_bound = '50%';
+                        var $right_bound = '90%';
+                        //Enable swiping...
+                        $("#test").swipe( {
+                                //Generic swipe handler for all directions
+                                swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                                 
+                                        if(direction == 'left') {
+                                                if($count < $total) {
+                                                        $('.quest'+$count).animate({
+                                                                left: $left_bound,
+                                                                opacity: 0
+                                                        },400, function() {
+                                                                // animation complete
+                                                                $(this).hide();
+                                                        });
+                                                        $count++;
+                                                        $('.quest'+$count).show().animate({
+                                                                left: $center_bound,
+                                                                opacity: 100
+                                                        },400);
+                                                } else {
+                                                        // do nothing
+                                                }
+                                        } 
+                                        else if(direction == 'right') {
+                                                if($count == 1) {
+                                                        // do nothing
+                                                } else {
+                                                        $('.quest'+$count).animate({
+                                                                left: $right_bound,
+                                                                opacity: 0
+                                                        },400, function() {
+                                                                // animation complete
+                                                                $(this).hide();
+                                                        });
+                                                        $count--;
+                                                        $('.quest'+$count).show().animate({
+                                                                left: $center_bound,
+                                                                opacity: 100
+                                                        },400);
+                                                }
+                                        }
+                                }
+                        });
+                });
+        }
+ 
+        // When document is ready check the screen size
+        if($(window).width() < 1200) {
+                $init_slider();
+        }
+ 
+        // When window is resize
+        $(window).resize(function(){
+                if($(window).width() < 1200) {
+                        $init_slider();
+                } else {
+                        $('#test').removeClass('tablet');
+                        $("#test").swipe("destroy");
+                        $('.quest').css({
+                                opacity: 1,
+                                display: 'block'
+                        });
+                }
+        });
+ 
+}); // end $(document).ready
+</script>
       
  
   </body>
