@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
         <link href= "css/custom.css" rel= "stylesheet">
           <link href="css/bootstrap.min.css" rel="stylesheet">
-           <link rel="prefetch" href="img/happypup.png">
-           <link rel="prefetch" href= "img/found.png">
+           
+          
      <style>
       #home, #found, #chips {
             padding: 0 3%;
@@ -25,31 +25,7 @@
             font-weight: bold;
       }
     </style>
-    <style>
-        #test {
-                background-color: #eee;
-                height: 320px;
-                margin: 0 auto;
-                width: 640px;
-        }
-        .quest {
-                background: #ccc;
-                display: block;
-                height: 240px;
-                margin: 0 auto;
-                opacity: 1;
-                width: 320px;
-        }
- 
-        .tablet {
-                position: relative;
-        }
- 
-        .tablet .quest {
-                position: absolute;
-                margin-left: -160px;
-        }
-</style>
+   
      </head>
 
 
@@ -192,12 +168,7 @@
                     </div>
                 </div>
                 </form>
- <main data-role="content">
-                  <p>Swipe left/right to increase and decrease the number of kittehz you see.</p>
-                  <p>Tap and hold to change to lots of adorable kittehz.</p>
-                  <p>Try an orientation change to see 3 kittehz and a surprise.</p>
-                  <div id="kitteh" class="start"></div>
-            </main>
+ 
 
 <footer class="row">
 <p><small>Copyright Jenn Ashton 2014 </small></p>
@@ -287,26 +258,7 @@
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
    
-    <script>
-            $(document).ready(function() {
-                  $('main').bind('swipeleft', function(event) {
-                        $('#kitteh').removeClass().addClass('one');           
-                  });
-                  $('main').bind('swiperight', function(event) {
-                        $('#kitteh').removeClass().addClass('two');         
-                  });
-                  $('main').bind('taphold', function(event) {
-                        $('#kitteh').removeClass().addClass('lots');
-                  });
-                  $( window ).on( 'orientationchange', function() {
-                        if(window.orientation == 0) {
-                              $('#kitteh').removeClass().addClass('puppy');
-                        } else {
-                              $('#kitteh').removeClass().addClass('three');
-                        }
-                  });
-            });
-      </script>
+    
     <script src="js/bootstrap.min.js"></script>
     <script>
    $(function(){
