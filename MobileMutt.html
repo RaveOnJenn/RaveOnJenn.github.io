@@ -14,6 +14,7 @@
         <link href= "css/custom.css" rel= "stylesheet">
           <link href="css/bootstrap.min.css" rel="stylesheet">
            <link rel="prefetch" href="img/happypup.png">
+           <link rel="prefetch" href= "img/found.png">
      <style>
       #home, #found, #chips {
             padding: 0 3%;
@@ -55,12 +56,6 @@
   
     
 <body>
-
-<div id="test">
-        <div class="quest quest1">Quest 1</div>
-        <div class="quest quest2">Quest 2</div>
-        <div class="quest quest3">Quest 3</div>
-</div>
 
 
     <section data-role="page" id="home" data-theme="c">
@@ -197,7 +192,12 @@
                     </div>
                 </div>
                 </form>
- 
+ <main data-role="content">
+                  <p>Swipe left/right to increase and decrease the number of kittehz you see.</p>
+                  <p>Tap and hold to change to lots of adorable kittehz.</p>
+                  <p>Try an orientation change to see 3 kittehz and a surprise.</p>
+                  <div id="kitteh" class="start"></div>
+            </main>
 
 <footer class="row">
 <p><small>Copyright Jenn Ashton 2014 </small></p>
@@ -287,7 +287,18 @@
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
    
+    <script>
+            $(document).ready(function() {
     
+                  $( window ).on( 'orientationchange', function() {
+                        if(window.orientation == 0) {
+                              $('#kitteh').removeClass().addClass('happypup');
+                        } else {
+                              $('#kitteh').removeClass().addClass('found');
+                        }
+                  });
+            });
+      </script>
     <script src="js/bootstrap.min.js"></script>
     <script>
    $(function(){
@@ -299,96 +310,7 @@
 
     $('a.btn-info').tooltip()
   </script>
-      <script>
-$(document).ready(function(){
-        var $init_slider = function() {
-                $('#test').addClass('tablet');
- 
-                $('.quest').css({
-                        opacity: 0,
-                        display: 'none',
-                        left: '100%'
-                });
- 
-                $('.quest:first-child').css({
-                        opacity: 1,
-                        display: 'block',
-                        left: '50%'
-                });
- 
-                $(function() {  
-                        var $count = 1;
-                        var $total = 3;
-                        var $left_bound = '10%';
-                        var $center_bound = '50%';
-                        var $right_bound = '90%';
-                        //Enable swiping...
-                        $("#test").swipe( {
-                                //Generic swipe handler for all directions
-                                swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-                                 
-                                        if(direction == 'left') {
-                                                if($count < $total) {
-                                                        $('.quest'+$count).animate({
-                                                                left: $left_bound,
-                                                                opacity: 0
-                                                        },400, function() {
-                                                                // animation complete
-                                                                $(this).hide();
-                                                        });
-                                                        $count++;
-                                                        $('.quest'+$count).show().animate({
-                                                                left: $center_bound,
-                                                                opacity: 100
-                                                        },400);
-                                                } else {
-                                                        // do nothing
-                                                }
-                                        } 
-                                        else if(direction == 'right') {
-                                                if($count == 1) {
-                                                        // do nothing
-                                                } else {
-                                                        $('.quest'+$count).animate({
-                                                                left: $right_bound,
-                                                                opacity: 0
-                                                        },400, function() {
-                                                                // animation complete
-                                                                $(this).hide();
-                                                        });
-                                                        $count--;
-                                                        $('.quest'+$count).show().animate({
-                                                                left: $center_bound,
-                                                                opacity: 100
-                                                        },400);
-                                                }
-                                        }
-                                }
-                        });
-                });
-        }
- 
-        // When document is ready check the screen size
-        if($(window).width() < 1200) {
-                $init_slider();
-        }
- 
-        // When window is resize
-        $(window).resize(function(){
-                if($(window).width() < 1200) {
-                        $init_slider();
-                } else {
-                        $('#test').removeClass('tablet');
-                        $("#test").swipe("destroy");
-                        $('.quest').css({
-                                opacity: 1,
-                                display: 'block'
-                        });
-                }
-        });
- 
-}); // end $(document).ready
-</script>
+      
       
  
   </body>
